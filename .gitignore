@@ -1,0 +1,15 @@
+node_modules/
+dist/
+private/
+test-results/
+playwright-report/
+tmp/
+.playwright-cli/
+*.log
+
+qa/
+output/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

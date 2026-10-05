@@ -1,0 +1,589 @@
+[
+  {
+    "file": "assets/creative-town.webp",
+    "type": "generated-decoration",
+    "original": "artwork/creative-town.png",
+    "purpose": "creative-town",
+    "evidence": false
+  },
+  {
+    "file": "assets/pixel-raihan.webp",
+    "type": "generated-decoration",
+    "original": "artwork/pixel-raihan.png",
+    "purpose": "pixel-raihan",
+    "evidence": false
+  },
+  {
+    "file": "assets/foreground.webp",
+    "type": "generated-decoration",
+    "original": "artwork/foreground.png",
+    "purpose": "foreground",
+    "evidence": false
+  },
+  {
+    "file": "assets/raihan-profile.jpg",
+    "type": "source-document-or-photo",
+    "source": "09_Profil_dan_Portofolio/raihan-profile.jpg",
+    "transform": "none",
+    "sha256": "180756d8483a189f1b4a50a6e0c00f8f496402ae7effed0e6ea78a560155fa42"
+  },
+  {
+    "file": "proof/divia-ig-performance.jpg",
+    "type": "source-evidence",
+    "source": "02_Divia_Unpad_TV/divia-ig-performance.jpg",
+    "transform": "none",
+    "sha256": "20510442cf8869fd1f12facb83fb5069ec4bdf329e83bed31f8eaffaff9a7b2c"
+  },
+  {
+    "file": "proof/divia-ig-audience.jpg",
+    "type": "source-evidence",
+    "source": "02_Divia_Unpad_TV/divia-ig-audience.jpg",
+    "transform": "none",
+    "sha256": "5ae21f37f5dbb6bad97a8d3913a809e9bbd824ad27570dfe3d601fea2607a98e"
+  },
+  {
+    "file": "proof/divia-tiktok-growth.jpg",
+    "type": "source-evidence",
+    "source": "02_Divia_Unpad_TV/divia-tiktok-growth.jpg",
+    "transform": "none",
+    "sha256": "fcb76636f3545b2178a8ef7d7967d23bed8810d53e64057d2b4e0a3bd3c30b99"
+  },
+  {
+    "file": "proof/divia-linkedin-post.jpeg",
+    "type": "source-evidence",
+    "source": "02_Divia_Unpad_TV/divia-linkedin-post.jpeg",
+    "transform": "none",
+    "sha256": "0a1b6ad39e0dff02334fe4640e8a1b345c16e459edb0f292d825fc562f1a021b"
+  },
+  {
+    "file": "proof/tiriz-offline-event.png",
+    "type": "source-evidence",
+    "source": "01_TIRIZ/tiriz-offline-event.png",
+    "transform": "none",
+    "sha256": "6e297e43784e653049d0694c16f5f817e39fd3e227f44fd0999ecc8f9505254b"
+  },
+  {
+    "file": "proof/cakradata.jpg",
+    "type": "source-evidence",
+    "source": "03_Cakradata/s10_30.jpg",
+    "transform": "none",
+    "sha256": "858a674677c2ca15ba5d96980c3f1724b22e67856058ff9f042ca041d5b8eecc"
+  },
+  {
+    "file": "proof/fikomnex.jpg",
+    "type": "source-evidence",
+    "source": "04_Fikomnex/s11_23.jpg",
+    "transform": "none",
+    "sha256": "82718fc704cbe1e928f40961ac3345e87a94d46be50c51c3bbefbffe24a7444f"
+  },
+  {
+    "file": "proof/hima.jpeg",
+    "type": "source-evidence",
+    "source": "05_HIMA_Mankom/hima-program.jpeg",
+    "transform": "none",
+    "sha256": "5202c6521a1f4bcc60078605f8f2c6bcaba8ebbbc2148ff903aacb55777fbd32"
+  },
+  {
+    "file": "proof/bem.jpeg",
+    "type": "source-evidence",
+    "source": "06_BEM_Fikom/bem-welcoming.jpeg",
+    "transform": "none",
+    "sha256": "7dbe60ca4d9ed10a7615a845bdffac0d079bbd26b17e3b2057a19d1a3e05b634"
+  },
+  {
+    "file": "proof/home-theatre.jpeg",
+    "type": "source-evidence",
+    "source": "07_Home_Theatre/home-theatre-team.jpeg",
+    "transform": "none",
+    "sha256": "278e581ab2b58620ee0268608bc47a5cbfe4d0b23824838f63ac8ab981557787"
+  },
+  {
+    "file": "proof/ideation.jpeg",
+    "type": "source-evidence",
+    "source": "08_Ideation/ideation-final-day.jpeg",
+    "transform": "none",
+    "sha256": "c1f9a02e39a5d5a6c4ac351d514f2cf22e5cee65f2c86768e972307293d51171"
+  },
+  {
+    "file": "documents/CV_Raihan.pdf",
+    "type": "source-document-or-photo",
+    "source": "09_Profil_dan_Portofolio/CV_Raihan.pdf",
+    "transform": "none",
+    "sha256": "40c98d26bb310d6ef57ed5669e2fa7c7fffffa900602957d017a684f7157818f"
+  },
+  {
+    "file": "proof/tiriz-kpi.png",
+    "type": "source-evidence",
+    "transform": "original PDF page rendered by Poppler; no semantic changes",
+    "page": 16
+  },
+  {
+    "file": "proof/tiriz-kol.png",
+    "type": "source-evidence",
+    "transform": "original PDF page rendered by Poppler; no semantic changes",
+    "page": 9
+  },
+  {
+    "file": "proof/course-certificate.png",
+    "type": "source-evidence",
+    "transform": "original PDF page rendered by Poppler; no semantic changes",
+    "page": 1
+  },
+  {
+    "file": "assets/town-objects.webp",
+    "type": "generated-decoration",
+    "original": "artwork/town-objects.png",
+    "purpose": "Three project landmark illustrations; sprite sheet",
+    "evidence": false
+  },
+  {
+    "file": "assets/divia-sample.webp",
+    "type": "source-evidence-preview",
+    "original": "proof/divia-linkedin-post.jpeg",
+    "transform": "display-size resize and WebP encoding only; full original retained in proof viewer"
+  },
+  {
+    "file": "assets/tiriz-sample.webp",
+    "type": "source-evidence-preview",
+    "original": "proof/tiriz-offline-event.png",
+    "transform": "display-size resize and WebP encoding only; full original retained in proof viewer"
+  },
+  {
+    "file": "assets/cakradata-sample.webp",
+    "type": "source-evidence-preview",
+    "original": "proof/cakradata.jpg",
+    "transform": "display-size resize and WebP encoding only; full original retained in proof viewer"
+  },
+  {
+    "file": "assets/fikomnex-photo.webp",
+    "type": "source-photo-preview",
+    "original": "proof/fikomnex.jpg",
+    "transform": "display-size resize and WebP encoding only; full original retained in proof viewer"
+  },
+  {
+    "file": "assets/hima-photo.webp",
+    "type": "source-photo-preview",
+    "original": "proof/hima.jpeg",
+    "transform": "display-size resize and WebP encoding only; full original retained in proof viewer"
+  },
+  {
+    "file": "assets/bem-photo.webp",
+    "type": "source-photo-preview",
+    "original": "proof/bem.jpeg",
+    "transform": "display-size resize and WebP encoding only; full original retained in proof viewer"
+  },
+  {
+    "file": "assets/theatre-photo.webp",
+    "type": "source-photo-preview",
+    "original": "proof/home-theatre.jpeg",
+    "transform": "display-size resize and WebP encoding only; full original retained in proof viewer"
+  },
+  {
+    "file": "assets/ideation-photo.webp",
+    "type": "source-photo-preview",
+    "original": "proof/ideation.jpeg",
+    "transform": "display-size resize and WebP encoding only; full original retained in proof viewer"
+  },
+  {
+    "file": "assets/raihan-profile-preview.webp",
+    "type": "source-photo-preview",
+    "original": "assets/raihan-profile.jpg",
+    "transform": "display-size resize; real portrait unaltered in meaning"
+  },
+  {
+    "file": "proof/divia-linkedin-export.html",
+    "type": "source-evidence-transcription",
+    "source": "C:\\Users\\Hp\\Downloads\\divia-unpad-tv-fikom_content_1785500685838.xls",
+    "worksheet": "All posts",
+    "rows": [
+      11,
+      10,
+      7
+    ],
+    "sha256Original": "c80bd310f1dd06eae424ad5de2afaa0bcc88cf10620b855d9400cea4916f2a48",
+    "transform": "Selected cells transcribed to semantic HTML; CTR formatted to one decimal; poster names summarized as Raihan/Teammate. No generated analytics."
+  },
+  {
+    "file": "assets/underground-crosssection.webp",
+    "type": "generated-decoration",
+    "original": "artwork/underground-crosssection.png",
+    "evidence": false,
+    "prompts": "artwork/underground-prompts.json",
+    "transform": "WebP quality 90 compression only; original PNG retained"
+  },
+  {
+    "file": "assets/underground-finds.webp",
+    "type": "generated-decoration",
+    "original": "artwork/underground-finds.png",
+    "evidence": false,
+    "prompts": "artwork/underground-prompts.json",
+    "transform": "WebP quality 90 compression only; original PNG retained"
+  },
+  {
+    "file": "logos/bem.png",
+    "type": "source-brand-mark",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-bem.png",
+    "transform": "none",
+    "sha256": "181882ee15a2b16ae04aa578031c2e0c91f516f9569b5b0be0dc10dc710a05a3"
+  },
+  {
+    "file": "logos/cakradata.png",
+    "type": "source-brand-mark",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-cakradata.png",
+    "transform": "none",
+    "sha256": "bdebc10274a97e8bb659afb79e228eacc491a81a178634492ee4aedbc3b1c0ea"
+  },
+  {
+    "file": "logos/divia.png",
+    "type": "source-brand-mark",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-divia.png",
+    "transform": "none",
+    "sha256": "a234611ceafdc36b9bed71911d3d79cfc50720f69c4a6d084a1b96f9219022c1"
+  },
+  {
+    "file": "logos/hima.png",
+    "type": "source-brand-mark",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-hima.png",
+    "transform": "none",
+    "sha256": "c39bc58f8af3067d73b33d4f08d1d6e0709ef7e766bcf04ac367b56b7e9364c5"
+  },
+  {
+    "file": "logos/home-theatre.png",
+    "type": "source-brand-mark",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-home-theatre.png",
+    "transform": "none",
+    "sha256": "a3ce0d43416baa88c3cb727817db55434e112685ae4aae75d2e1b7b974a9aef0"
+  },
+  {
+    "file": "logos/ideation.png",
+    "type": "source-brand-mark",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-ideation.png",
+    "transform": "none",
+    "sha256": "84ac7dafd0d2b5213965ba37ed82c1564944945f4ea24da68b3318be14e58dd6"
+  },
+  {
+    "file": "logos/tiriz.png",
+    "type": "source-brand-mark",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-tiriz.png",
+    "transform": "none",
+    "sha256": "9f1623f10ed624aea51ffe2e5f8e7f75f0d5e5116685c6e7f807207caa742848"
+  },
+  {
+    "file": "logos/apps/canva.png",
+    "type": "official-app-icon",
+    "source": "https://static.canva.com/static/images/favicon-1.ico",
+    "transform": "ICO bitmap converted to PNG",
+    "sha256": "ab6f24d79abddbd8956d7159ddfd05be8de312340423abf2004916717671112a"
+  },
+  {
+    "file": "logos/apps/excel.png",
+    "type": "official-app-icon",
+    "source": "https://res.cdn.office.net/files/fabric-cdn-prod_20221201.001/assets/brand-icons/product/png/excel_48x1.png",
+    "transform": "none",
+    "sha256": "25847181646d57146e37d5368c8c5799efde8634f8bf75c7a3eea2d98acbbc70"
+  },
+  {
+    "file": "logos/apps/google-docs.png",
+    "type": "official-app-icon",
+    "source": "https://www.gstatic.com/images/branding/product/2x/docs_48dp.png",
+    "transform": "none",
+    "sha256": "e5b865281d73c1978f0187e63670992e5f11159d440ab3d15555eb6c375bd422"
+  },
+  {
+    "file": "logos/apps/google-drive.png",
+    "type": "official-app-icon",
+    "source": "https://www.gstatic.com/images/branding/product/2x/drive_48dp.png",
+    "transform": "none",
+    "sha256": "177789faceffaa47390106b07234bf70f46235567edab0095ea4e947a6e97394"
+  },
+  {
+    "file": "logos/apps/google-sheets.png",
+    "type": "official-app-icon",
+    "source": "https://www.gstatic.com/images/branding/product/2x/sheets_48dp.png",
+    "transform": "none",
+    "sha256": "63f51abec80bb239deb969b4927cb595394a6d3dc941dd1a0d5f568cd172db7c"
+  },
+  {
+    "file": "logos/apps/google-slides.png",
+    "type": "official-app-icon",
+    "source": "https://www.gstatic.com/images/branding/product/2x/slides_48dp.png",
+    "transform": "none",
+    "sha256": "531da4b5352f1d36e6c469b7c2b764ca17cfd2ab428f03ad8081d0f41dbb562e"
+  },
+  {
+    "file": "logos/apps/powerpoint.png",
+    "type": "official-app-icon",
+    "source": "https://res.cdn.office.net/files/fabric-cdn-prod_20221201.001/assets/brand-icons/product/png/powerpoint_48x1.png",
+    "transform": "none",
+    "sha256": "64690d558b257afa224813fffa64c5f7bb8295082dd56b546c7f931f9128aa51"
+  },
+  {
+    "file": "logos/apps/word.png",
+    "type": "official-app-icon",
+    "source": "https://res.cdn.office.net/files/fabric-cdn-prod_20221201.001/assets/brand-icons/product/png/word_48x1.png",
+    "transform": "none",
+    "sha256": "f75b6a24b1569b660ccee0a66d2e75ee8bcd1d8dd1d875d000d727df465bf175"
+  },
+  {
+    "file": "documents/TIRIZ_Laporan_Kampanye.pdf",
+    "type": "source-document",
+    "source": "01_TIRIZ/TIRIZ_Laporan_Kampanye.pdf",
+    "transform": "none",
+    "sha256": "63cbcaa9cf99cd0acc600f56471456061f01c32727ddf610021ac3cbbba923a5"
+  },
+  {
+    "file": "logos/bem.webp",
+    "type": "source-brand-mark-preview",
+    "original": "logos/bem.png",
+    "transform": "Display-size resize and WebP encoding only; genuine original mark retained"
+  },
+  {
+    "file": "logos/cakradata.webp",
+    "type": "source-brand-mark-preview",
+    "original": "logos/cakradata.png",
+    "transform": "Display-size resize and WebP encoding only; genuine original mark retained"
+  },
+  {
+    "file": "logos/divia.webp",
+    "type": "source-brand-mark-preview",
+    "original": "logos/divia.png",
+    "transform": "Display-size resize and WebP encoding only; genuine original mark retained"
+  },
+  {
+    "file": "logos/hima.webp",
+    "type": "source-brand-mark-preview",
+    "original": "logos/hima.png",
+    "transform": "Display-size resize and WebP encoding only; genuine original mark retained"
+  },
+  {
+    "file": "logos/home-theatre.webp",
+    "type": "source-brand-mark-preview",
+    "original": "logos/home-theatre.png",
+    "transform": "Display-size resize and WebP encoding only; genuine original mark retained"
+  },
+  {
+    "file": "logos/ideation.webp",
+    "type": "source-brand-mark-preview",
+    "original": "logos/ideation.png",
+    "transform": "Display-size resize and WebP encoding only; genuine original mark retained"
+  },
+  {
+    "file": "logos/tiriz.webp",
+    "type": "source-brand-mark-preview",
+    "original": "logos/tiriz.png",
+    "transform": "Display-size resize and WebP encoding only; genuine original mark retained"
+  },
+  {
+    "file": "logos/bem-transparent.webp",
+    "type": "source-brand-mark-restoration",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-bem-clean.png",
+    "original": "artwork/brand-marks/bem-transparent.png",
+    "transform": "Transparent high-resolution variant from owner portfolio repository; lossless WebP encoding, maximum 1600 pixels. Original low-resolution mark also retained.",
+    "sha256": "c75e252c0a51697b978535e2cb954818c801e2c122dbbca98e9d529212fa4691",
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "logos/cakradata-transparent.webp",
+    "type": "source-brand-mark-restoration",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-cakradata-clean.png",
+    "original": "artwork/brand-marks/cakradata-transparent.png",
+    "transform": "Transparent high-resolution variant from owner portfolio repository; lossless WebP encoding, maximum 1600 pixels. Original low-resolution mark also retained.",
+    "sha256": "1df9df327852018f5aad347d73ee9f47e40dcbc87cb7929ed9d348ed9a0300de",
+    "dimensions": [
+      1600,
+      535
+    ]
+  },
+  {
+    "file": "logos/divia-transparent.webp",
+    "type": "source-brand-mark-restoration",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-divia-clean.png",
+    "original": "artwork/brand-marks/divia-transparent.png",
+    "transform": "Transparent high-resolution variant from owner portfolio repository; lossless WebP encoding, maximum 1600 pixels. Original low-resolution mark also retained.",
+    "sha256": "26491f358aface1dec7a8d5a521c3c11bb35341b87f1fec34e34e03eff8b4fe5",
+    "dimensions": [
+      1600,
+      535
+    ]
+  },
+  {
+    "file": "logos/home-theatre-transparent.webp",
+    "type": "source-brand-mark-restoration",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-home-theatre-clean.png",
+    "original": "artwork/brand-marks/home-theatre-transparent.png",
+    "transform": "Transparent high-resolution variant from owner portfolio repository; lossless WebP encoding, maximum 1600 pixels. Original low-resolution mark also retained.",
+    "sha256": "8908c6ebfb26a53fc4307ae1f8d3f06dc9f699db19a64778b2cfa627ae2a569a",
+    "dimensions": [
+      1390,
+      1132
+    ]
+  },
+  {
+    "file": "logos/tiriz-transparent.webp",
+    "type": "source-brand-mark-restoration",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-tiriz-clean.png",
+    "original": "artwork/brand-marks/tiriz-transparent.png",
+    "transform": "Transparent high-resolution variant from owner portfolio repository; lossless WebP encoding, maximum 1600 pixels. Original low-resolution mark also retained.",
+    "sha256": "0879b233b3908cacddf2c8a52496d2e5c29f6763248b0fb152606e8f0a8d78b4",
+    "dimensions": [
+      1600,
+      979
+    ]
+  },
+  {
+    "file": "logos/hima-transparent.webp",
+    "type": "source-brand-mark-restoration",
+    "source": "https://himamankom.carrd.co/assets/images/image01.png?v=cb969fe7",
+    "original": "logos/hima.png",
+    "restoredMaster": "artwork/brand-marks/hima-restored.png",
+    "transform": "AI-assisted high-resolution restoration of the supplied genuine logo; lettering and central symbols visually checked against the original. Not an organization-supplied high-resolution master. Lossless WebP encoding.",
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "logos/ideation-transparent.png",
+    "type": "source-brand-mark",
+    "source": "https://raw.githubusercontent.com/rehunss/Portofolio/main/assets/logo-ideation.png",
+    "transform": "none; original 3222 x 3222 transparent PNG used directly",
+    "sha256": "84ac7dafd0d2b5213965ba37ed82c1564944945f4ea24da68b3318be14e58dd6"
+  },
+  {
+    "file": "logos/apps/google-docs-hires.png",
+    "type": "official-app-icon",
+    "source": "https://www.gstatic.com/images/branding/product/2x/docs_512dp.png",
+    "transform": "none; high-resolution transparent original",
+    "sha256": "9e2edeb00c005841f8b2e82e4f6373dabb23f3cca2fa74c9dc2536f5596ff7e5"
+  },
+  {
+    "file": "logos/apps/google-sheets-hires.png",
+    "type": "official-app-icon",
+    "source": "https://www.gstatic.com/images/branding/product/2x/sheets_512dp.png",
+    "transform": "none; high-resolution transparent original",
+    "sha256": "0f08a6b1b7fb6c78372492da9eff8f1e5b18864e6f38a0e4ea25e468cf8bb97d"
+  },
+  {
+    "file": "logos/apps/google-slides-hires.png",
+    "type": "official-app-icon",
+    "source": "https://www.gstatic.com/images/branding/product/2x/slides_512dp.png",
+    "transform": "none; high-resolution transparent original",
+    "sha256": "01790e8bfc10de0463b7263fb72359d09af41fb6543f87bbd1b7065f1f74f1c2"
+  },
+  {
+    "file": "logos/apps/google-drive-hires.png",
+    "type": "official-app-icon",
+    "source": "https://www.gstatic.com/images/branding/product/2x/drive_512dp.png",
+    "transform": "none; high-resolution transparent original",
+    "sha256": "62513426082323e0fa0a06593695862a9801bff8d114faf4ae8447c0a0bbd0ec"
+  },
+  {
+    "file": "logos/apps/word.svg",
+    "type": "official-app-icon",
+    "source": "https://res.cdn.office.net/files/fabric-cdn-prod_20221201.001/assets/brand-icons/product/svg/word_48x1.svg",
+    "transform": "none; native vector",
+    "sha256": "fef9d7fc114f0c5d55e6d50c6d8d3fc40ed69f1122d9adf1780dfa57ad40af79"
+  },
+  {
+    "file": "logos/apps/powerpoint.svg",
+    "type": "official-app-icon",
+    "source": "https://res.cdn.office.net/files/fabric-cdn-prod_20221201.001/assets/brand-icons/product/svg/powerpoint_48x1.svg",
+    "transform": "none; native vector",
+    "sha256": "708fa79febaf25786d84a4bd6a39c8a7345e1e927399f88761db11dab5441f84"
+  },
+  {
+    "file": "logos/apps/excel.svg",
+    "type": "official-app-icon",
+    "source": "https://res.cdn.office.net/files/fabric-cdn-prod_20221201.001/assets/brand-icons/product/svg/excel_48x1.svg",
+    "transform": "none; native vector",
+    "sha256": "da91a550409ab355e664188a00135bc93603e5a8f53df3eeed8abc2ab3db8d71"
+  },
+  {
+    "file": "logos/apps/canva-hires.png",
+    "type": "official-app-icon",
+    "source": "https://static.canva.com/static/images/android-192x192-2.png",
+    "transform": "none; high-resolution transparent original",
+    "sha256": "ede510e40cb6191b2eb42ae7aebe8d0c45a4714eac2c80ab4bacb2d53d54ed4a"
+  },
+  {
+    "file": "logos/apps/canva.svg",
+    "type": "official-app-icon",
+    "source": "https://www.canva.dev/",
+    "transform": "Native Canva wordmark SVG extracted from official developer-site header. Wrapper dimensions normalized; original paths and gradient unchanged.",
+    "sha256": "b7b97247f4b3f1d94440169296b4422e97eb39e3bf54ad2e58c2dd26a26a034a"
+  },
+  {
+    "file": "assets/continuous-world.webp",
+    "type": "generated-decoration",
+    "original": "artwork/continuous-world.png",
+    "evidence": false,
+    "purpose": "One uninterrupted town-to-core image, shared by the hero and every following section",
+    "transform": "WebP quality 90 encoding only",
+    "dimensions": [
+      724,
+      2172
+    ],
+    "sha256": "a89daa6c748907e89761b936ccc0b2d786faa8fb4208562235356b40898e0dee",
+    "prompts": "artwork/continuous-world-prompt.json"
+  },
+  {
+    "file": "assets/continuous-world-sharp-4x.webp",
+    "type": "generated-decoration",
+    "original": "artwork/continuous-world-sharp-native.png",
+    "master": "artwork/continuous-world-sharp-4x.png",
+    "evidence": false,
+    "purpose": "Sharper uninterrupted town-to-core pixel background",
+    "nativeDimensions": [
+      724,
+      2172
+    ],
+    "dimensions": [
+      2896,
+      8688
+    ],
+    "transform": "4x nearest-neighbor pixel-preserving export and lossless WebP encoding; no claim of additional native detail",
+    "sha256": "a7716a9d86b018fca9b5df4b20b076f3006a68b5685b9e01aa30412e3821ab5c",
+    "prompts": "artwork/continuous-world-sharp-prompt.json"
+  },
+  {
+    "file": "assets/continuous-world-sharp-2x.avif",
+    "type": "generated-decoration",
+    "original": "artwork/continuous-world-sharp-native.png",
+    "master": "artwork/continuous-world-sharp-4x.png",
+    "evidence": false,
+    "purpose": "Sharper uninterrupted town-to-core pixel background",
+    "nativeDimensions": [
+      724,
+      2172
+    ],
+    "dimensions": [
+      1448,
+      4344
+    ],
+    "transform": "2x nearest-neighbor pixel-preserving export, AVIF quality 80 with full 4:4:4 color; no claim of additional native detail",
+    "sha256": "886bf188ded65120bc38bb6f5aa291f0faf20bc774cfe15a750d88c0df2476c4",
+    "prompts": "artwork/continuous-world-sharp-prompt.json"
+  },
+  {
+    "file": "assets/continuous-world-sharp-4x.avif",
+    "type": "generated-decoration",
+    "original": "artwork/continuous-world-sharp-native.png",
+    "master": "artwork/continuous-world-sharp-4x.png",
+    "evidence": false,
+    "purpose": "Sharper uninterrupted town-to-core pixel background",
+    "nativeDimensions": [
+      724,
+      2172
+    ],
+    "dimensions": [
+      2896,
+      8688
+    ],
+    "transform": "4x nearest-neighbor pixel-preserving export, AVIF quality 80 with full 4:4:4 color; no claim of additional native detail",
+    "sha256": "09fffa14721934f551f5b4c730de4dd66abe851441413583a101bd02d679c973",
+    "prompts": "artwork/continuous-world-sharp-prompt.json"
+  }
+]

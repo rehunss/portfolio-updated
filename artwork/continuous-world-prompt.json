@@ -1,0 +1,11 @@
+{
+  "tool": "imagegen",
+  "mode": "composite-existing-decoration",
+  "inputs": [
+    "artwork/creative-town.png",
+    "artwork/underground-crosssection.png"
+  ],
+  "output": "artwork/continuous-world.png",
+  "prompt": "Edit/composite the two supplied decorative pixel-art scenery images into ONE new seamless tall scrolling background, a faithful connected extension of the existing portfolio game world. Image 1 is the creative town reference/upper scene; image 2 is the existing underground cross-section reference/lower scene. Deliver a tall portrait image, approximately 1024 x 4096, aspect ratio 1:4, opaque, no text. The top 15% of the entire image is a starry dusk sky and small cozy creative town: retain the navy sky, blue-green mountain silhouettes, warmly lit campus/media studio, small campaign marketplace stalls, workshop buildings and evergreen trees from image 1. The town sits on one continuous grassy earth ledge, NOT beside a big lake. Its solid ground flows seamlessly downward into roots and brown topsoil, then layered sedimentary stone, blue-gray rocky crust, green deep-mantle stone, dark red hot lower rock, golden-orange flowing metal, and luminous solid gold-colored crystalline core at the very bottom. Underground takes the remaining 85%, matching the rock textures/colors of image 2. Absolutely connect the town's ground into the dirt and roots without a blank band, navy fade, visible splice, framed section, collage seam, panel break, or separate illustration. Natural uneven transitions between rock types. Flat 2D side-view/cutaway 16-bit pixel adventure, crisp consistent pixel scale and restrained polished detail throughout. Keep corners and central area rich in texture so narrow mobile crops work. No interface, letters, facts, labels, numbers, logos, badges, characters, diagrams, arrows, or captions. Do not place fossils/treasure/diamonds in the metal core. One uninterrupted original illustration from sky to center of the earth. Make town-to-ground transition the priority, with physically connected ground and roots underneath the buildings.",
+  "evidence": false
+}

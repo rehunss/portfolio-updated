@@ -1,0 +1,13 @@
+{
+  "source": "public/logos/hima.png",
+  "output": "artwork/brand-marks/hima-restored.png",
+  "tool": "imagegen",
+  "intent": "High-resolution identity-preserving restoration on transparent background",
+  "checks": [
+    "HIMPUNAN MAHASISWA",
+    "MANAJEMEN KOMUNIKASI",
+    "central C-shaped mark and symbols"
+  ],
+  "limitation": "AI-assisted restoration; native organization master not available from inspected source.",
+  "prompt": "Edit target: supplied genuine HIMA Mankom logo. Produce a high-resolution faithful restoration of this exact existing logo, at least 1024 x 1024 with real transparent background outside the purple circle. This is asset restoration, NOT a new logo design. Keep every shape, exact orientation, off-white colors, purple color and composition unchanged. Preserve the oval ring and all exact lettering, arranged as original: top arc HIMPUNAN MAHASISWA, bottom arc MANAJEMEN KOMUNIKASI. Preserve the central abstract C-shaped white mark, small round off-white central disc, triangle and circle marks, and small white rectangle exactly as supplied. Clean crisp smooth edges at large resolution. NO reinterpretation, NO new elements, NO added text, NO borders, NO shadows, NO solid background. Preserve the purple disk as part of the logo itself. Return only the enlarged genuine mark on transparency."
+}

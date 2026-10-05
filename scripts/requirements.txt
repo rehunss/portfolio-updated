@@ -1,0 +1,4 @@
+reportlab>=4.2
+Pillow>=11
+pypdf>=5
+fonttools>=4.55
