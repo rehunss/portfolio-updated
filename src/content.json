@@ -7,51 +7,61 @@
     "education": "Communication Management student at Universitas Padjadjaran",
     "email": "mraihanr0511@gmail.com",
     "linkedin": "https://www.linkedin.com/in/muhammad-raihan-ramadhan-76021728b",
-    "portrait": "assets/raihan-profile-preview.webp",
+    "portrait": "assets/portrait-960.webp",
     "cv": "documents/CV_Raihan.pdf",
-    "portfolio": "documents/Raihan_Adventure_Portfolio.pdf",
+    "portfolio": "documents/Raihan_Modern_Portfolio.pdf",
     "campaignReport": "documents/TIRIZ_Laporan_Kampanye.pdf",
-    "campaignReportUrl": "https://rehunss.github.io/Portofolio/TIRIZ_Laporan_Kampanye.pdf"
+    "campaignReportUrl": "https://rehunss.github.io/portfolio-updated/documents/TIRIZ_Laporan_Kampanye.pdf"
   },
   "sources": [
     {
       "id": "divia-ig",
-      "label": "Instagram Insights · May 31–Jul 30, 2026",
+      "label": "Instagram Insights · May 31-Jul 30, 2026",
       "file": "proof/divia-ig-performance.jpg",
       "alt": "Original Instagram report showing 22K Reel views, 11K viewers, 133 shares and 78 saves for May 31 to July 30, 2026.",
-      "context": "Original account report. K values are rounded as displayed. Views and viewers are different measures."
+      "context": "Original account report. K values are rounded as displayed. Views and viewers are different measures.",
+      "width": 1582,
+      "height": 2048
     },
     {
       "id": "divia-audience",
-      "label": "Instagram follower insights · May 31–Jul 30, 2026",
+      "label": "Instagram follower insights · May 31-Jul 30, 2026",
       "file": "proof/divia-ig-audience.jpg",
       "alt": "Instagram follower report showing age categories including 54.0 percent aged 18 to 24.",
-      "context": "Share of account followers by age; not the age of every viewer. Displayed percentages total 100.0%."
+      "context": "Share of account followers by age; not the age of every viewer. Displayed percentages total 100.0%.",
+      "width": 1582,
+      "height": 2048
     },
     {
       "id": "divia-tiktok",
-      "label": "TikTok Analytics · Jun 1–Jul 29, 2026",
+      "label": "TikTok Analytics · Jun 1-Jul 29, 2026",
       "file": "proof/divia-tiktok-growth.jpg",
       "alt": "TikTok follower analytics showing 4,427 total followers and 417 net followers, with a 31.5 percent comparison-period increase in net followers.",
-      "context": "Total followers is a stock; net followers is change over the period. The +31.5% comparison applies to net followers. Year corroborated by the training report and July 31, 2026 source capture."
+      "context": "Total followers is a stock; net followers is change over the period. The +31.5% comparison applies to net followers. Year corroborated by the training report and July 31, 2026 source capture.",
+      "width": 561,
+      "height": 2048
     },
     {
       "id": "divia-linkedin",
-      "label": "LinkedIn export · Jun 2–Jul 29, 2026 (UTC)",
+      "label": "LinkedIn export · Jun 2-Jul 29, 2026 (UTC)",
       "file": "proof/divia-linkedin-post.jpeg",
       "alt": "Published Divia LinkedIn carousel titled 7 Tips Diterima Magang, supplied as a real work sample.",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7473577887246340096",
       "context": "All posts worksheet: 160 impressions and 104 clicks for the June 19 carousel. CTR = 104 ÷ 160 × 100 = 65.0%. Team content; the export lists a teammate as the poster. This screenshot proves the post, while the figures come from the original export.",
-      "excerpt": "proof/divia-linkedin-export.html"
+      "excerpt": "proof/divia-linkedin-export.html",
+      "width": 1126,
+      "height": 756
     },
     {
       "id": "tiriz-kpi",
       "label": "TIRIZ original campaign report · p. 16",
       "file": "proof/tiriz-kpi.png",
       "alt": "Original TIRIZ KPI table on page 16 with targets and actual campaign results.",
-      "context": "Oct 1–Nov 30, 2025. Pancarona five-person team campaign. Percent of target = actual ÷ target × 100; it is not percent above target.",
+      "context": "Oct 1-Nov 30, 2025. Pancarona five-person team campaign. Percent of target = actual ÷ target × 100; it is not percent above target.",
       "download": "documents/TIRIZ_Laporan_Kampanye.pdf",
-      "downloadLabel": "Open full TIRIZ campaign report"
+      "downloadLabel": "Open full TIRIZ campaign report",
+      "width": 1600,
+      "height": 900
     },
     {
       "id": "tiriz-kol",
@@ -60,7 +70,9 @@
       "alt": "TIRIZ campaign report page 9 showing social media samples and KOL totals of 69,024 views and 6,072 engagements.",
       "context": "Team/account outcomes for the two-month campaign. Four KOL pieces; 69,024 ÷ 4 = 17,256 average views, matching page 16.",
       "download": "documents/TIRIZ_Laporan_Kampanye.pdf",
-      "downloadLabel": "Open full TIRIZ campaign report"
+      "downloadLabel": "Open full TIRIZ campaign report",
+      "width": 1600,
+      "height": 900
     },
     {
       "id": "tiriz-booth",
@@ -69,49 +81,63 @@
       "alt": "Visitors interacting with the colorful Choose Your Mood board at the TIRIZ campaign booth.",
       "context": "Photo of the offline activation. The report dates the booth to November 25, 2025; a photo alone does not prove attendance or conversion.",
       "download": "documents/TIRIZ_Laporan_Kampanye.pdf",
-      "downloadLabel": "Open full TIRIZ campaign report"
+      "downloadLabel": "Open full TIRIZ campaign report",
+      "width": 960,
+      "height": 1280
     },
     {
       "id": "cakradata",
       "label": "Cakradata supplied content sample",
       "file": "proof/cakradata.jpg",
       "alt": "Supplied TikTok feed featuring student-focused technology explainers and laptop content, including Raihan on camera.",
-      "context": "Student-focused technology explainers, laptop content and on-camera work at Cakradata."
+      "context": "Student-focused technology explainers, laptop content and on-camera work at Cakradata.",
+      "width": 720,
+      "height": 1600
     },
     {
       "id": "fikomnex",
       "label": "Fikomnex 2024 · team photo",
       "file": "proof/fikomnex.jpg",
       "alt": "Fikomnex 2024 organizing team on stage.",
-      "context": "Fikomnex 2024 organizing team. A career event organized by BEM Fikom Unpad."
+      "context": "Fikomnex 2024 organizing team. A career event organized by BEM Fikom Unpad.",
+      "width": 1600,
+      "height": 900
     },
     {
       "id": "hima",
       "label": "HIMA Mankom · program photo",
       "file": "proof/hima.jpeg",
       "alt": "HIMA Mankom Internship Program participants and organizers.",
-      "context": "HIMA Mankom Internship Program participants and organizers."
+      "context": "HIMA Mankom Internship Program participants and organizers.",
+      "width": 1108,
+      "height": 1477
     },
     {
       "id": "bem",
       "label": "BEM Fikom · Welcoming Party photo",
       "file": "proof/bem.jpeg",
       "alt": "Organizers at the BEM Fikom Welcoming Party.",
-      "context": "The BEM Fikom Welcoming Party, welcoming the newly formed cabinet staff."
+      "context": "The BEM Fikom Welcoming Party, welcoming the newly formed cabinet staff.",
+      "width": 960,
+      "height": 1706
     },
     {
       "id": "theatre",
       "label": "Home Theatre · team photo",
       "file": "proof/home-theatre.jpeg",
       "alt": "Home Theatre organizing team gathered on the theatre stage.",
-      "context": "The Home Theatre organizing team at its theatrical production."
+      "context": "The Home Theatre organizing team at its theatrical production.",
+      "width": 1536,
+      "height": 2048
     },
     {
       "id": "ideation",
       "label": "Ideation 2025 · final day photo",
       "file": "proof/ideation.jpeg",
       "alt": "Ideation 2025 team and participants on stage on the final day.",
-      "context": "Ideation 2025 final day: an international communication competition within Epicentrum."
+      "context": "Ideation 2025 final day: an international communication competition within Epicentrum.",
+      "width": 1108,
+      "height": 1477
     },
     {
       "id": "certificate",
@@ -120,19 +146,20 @@
       "download": "documents/Fundamentals_of_digital_marketing.pdf",
       "alt": "Original Fundamentals of digital marketing certificate naming Muhammad Raihan Ramadhan, completed November 23, 2025.",
       "context": "Certificate confirms the course, name, completion date and completion ID 424502059. Shown as course completion, without implying an additional professional accreditation.",
-      "downloadLabel": "Open original certificate PDF"
+      "downloadLabel": "Open original certificate PDF",
+      "width": 1237,
+      "height": 1600
     }
   ],
   "projects": [
     {
       "id": "divia",
       "chapter": "01",
-      "landmark": "The campus studio",
       "name": "Divia Unpad TV",
       "category": "Marketing communication internship",
-      "period": "Jun–Jul 2026",
+      "period": "Jun-Jul 2026",
       "headline": "A campus voice, across three platforms.",
-      "narrative": "In Divia's three-person marketing team, I helped plan content for students and media professionals, activate LinkedIn and develop partnership materials. I used platform insights to assess audience needs and publishing results. My takeaway: useful stories need a clear audience and a repeatable process, with each platform evaluated on its own terms.",
+      "narrative": "Divia Unpad TV is a campus media organization. In its three-person marketing team, I used audience insights to plan platform-specific content, activate LinkedIn and support partnership communication. The account results below reflect our shared work. My takeaway: a clear audience and a repeatable process help useful stories travel across platforms.",
       "contribution": "Content planning, LinkedIn copy, audience analysis, company profile and media-partnership workflow.",
       "takeaway": "Match the message to the platform. Evaluate audience growth separately from views and clicks.",
       "sample": "assets/divia-sample.webp",
@@ -149,20 +176,21 @@
         "tt-net",
         "li-ctr"
       ],
-      "logo": "logos/divia-transparent.webp",
-      "logoAlt": "Divia Unpad TV logo"
+      "logo": "logos/divia-transparent-display.webp",
+      "logoAlt": "Divia Unpad TV logo",
+      "logoWidth": 600,
+      "logoHeight": 201
     },
     {
       "id": "tiriz",
       "chapter": "02",
-      "landmark": "The campaign marketplace",
       "name": "TIRIZ",
       "category": "Academic client campaign · Pancarona team",
-      "period": "Oct–Nov 2025",
+      "period": "Oct-Nov 2025",
       "headline": "From an ice-cream story to a real-world moment.",
-      "narrative": "Our five-person Pancarona team developed a two-month campaign for TIRIZ. I contributed to content strategy, planning and execution, connecting short-form content, local creators and an interactive booth. Stories and video output exceeded their targets, while average feed reach fell short. My takeaway: delivery volume and audience response deserve separate evaluation.",
+      "narrative": "Our five-person Pancarona team ran a two-month campaign for TIRIZ, an ice-cream brand. I contributed to content strategy and execution, creator collaboration and the Choose Your Mood offline activation. Content delivery exceeded targets, while average Instagram feed reach fell short. My takeaway: evaluate delivery volume and audience response separately.",
       "contribution": "Campaign strategy, editorial planning, content execution and support for creator and offline activation.",
-      "takeaway": "More content did not guarantee stronger feed reach. Retain the missed target in the evaluation.",
+      "takeaway": "Content output and audience response need separate evaluation.",
       "sample": "assets/tiriz-sample.webp",
       "sampleAlt": "A visitor using TIRIZ's Choose Your Mood booth board.",
       "sampleCaption": "Campaign in the real world · Choose Your Mood activation",
@@ -177,18 +205,19 @@
         "tiriz-kol-views",
         "tiriz-feed-reach"
       ],
-      "logo": "logos/tiriz-transparent.webp",
-      "logoAlt": "TIRIZ logo"
+      "logo": "logos/tiriz-transparent-display.webp",
+      "logoAlt": "TIRIZ logo",
+      "logoWidth": 600,
+      "logoHeight": 367
     },
     {
       "id": "cakradata",
       "chapter": "03",
-      "landmark": "The strategy workshop",
       "name": "Cakradata",
       "category": "Marketing internship",
-      "period": "Jan–Feb 2025",
+      "period": "Jan-Feb 2025",
       "headline": "Making technology relevant to student life.",
-      "narrative": "At Cakradata, a technology company, I supported audience analysis and media monitoring, turning student interests into content plans and soft-selling copy. My work included technology explainers, laptop content and on-camera delivery. Top-performing content reached 13,000 TikTok views and 2,000 Instagram views. My takeaway: connect a familiar audience need to a clear product benefit.",
+      "narrative": "At Cakradata, a technology company, I researched audiences, monitored media and turned student needs into content plans, soft-selling copy and technology explainers. I also contributed on camera. Selected top posts recorded 13,000 TikTok views and 2,000 Instagram views. My takeaway: start with a familiar audience need, then explain the product benefit.",
       "contribution": "Audience research, student-focused content planning, soft-selling copy and multimedia support.",
       "takeaway": "Explain the benefit in the audience's language before introducing the product.",
       "sample": "assets/cakradata-sample.webp",
@@ -201,8 +230,10 @@
         "cakradata-tiktok-top",
         "cakradata-instagram-top"
       ],
-      "logo": "logos/cakradata-transparent.webp",
-      "logoAlt": "Cakradata logo"
+      "logo": "logos/cakradata-transparent-display.webp",
+      "logoAlt": "Cakradata logo",
+      "logoWidth": 600,
+      "logoHeight": 201
     }
   ],
   "metrics": [
@@ -212,7 +243,7 @@
       "value": 22000,
       "display": "22K",
       "unit": "views",
-      "period": "May 31–Jul 30, 2026",
+      "period": "May 31-Jul 30, 2026",
       "attribution": "Divia Instagram account",
       "sourceId": "divia-ig",
       "note": "Rounded value as displayed; views can include repeat viewing."
@@ -223,7 +254,7 @@
       "value": 11000,
       "display": "11K",
       "unit": "viewers",
-      "period": "May 31–Jul 30, 2026",
+      "period": "May 31-Jul 30, 2026",
       "attribution": "Divia Instagram account",
       "sourceId": "divia-ig",
       "note": "Rounded value as displayed; distinct from view count."
@@ -234,7 +265,7 @@
       "value": 133,
       "display": "133",
       "unit": "shares",
-      "period": "May 31–Jul 30, 2026",
+      "period": "May 31-Jul 30, 2026",
       "attribution": "Divia Instagram account",
       "sourceId": "divia-ig",
       "note": "Report aggregate. Not a count for one selected post."
@@ -245,7 +276,7 @@
       "value": 78,
       "display": "78",
       "unit": "saves",
-      "period": "May 31–Jul 30, 2026",
+      "period": "May 31-Jul 30, 2026",
       "attribution": "Divia Instagram account",
       "sourceId": "divia-ig",
       "note": "Report aggregate; does not prove the reason each user saved content."
@@ -256,7 +287,7 @@
       "value": 4427,
       "display": "4,427",
       "unit": "followers",
-      "period": "Snapshot in Jun 1–Jul 29, 2026 report",
+      "period": "Snapshot in Jun 1-Jul 29, 2026 report",
       "attribution": "Divia TikTok account",
       "sourceId": "divia-tiktok",
       "note": "All-time stock. Not the number gained during this period."
@@ -267,7 +298,7 @@
       "value": 417,
       "display": "+417",
       "unit": "net followers",
-      "period": "Jun 1–Jul 29, 2026",
+      "period": "Jun 1-Jul 29, 2026",
       "attribution": "Divia TikTok account",
       "sourceId": "divia-tiktok",
       "note": "Net follower additions. +31.5% compares this net measure with the comparison period, not total follower growth."
@@ -278,7 +309,7 @@
       "value": 65,
       "display": "65.0%",
       "unit": "click-through rate",
-      "period": "Jun 2–Jul 29, 2026 export; post Jun 19",
+      "period": "Jun 2-Jul 29, 2026 export; post Jun 19",
       "attribution": "Divia LinkedIn team content",
       "sourceId": "divia-linkedin",
       "note": "104 clicks / 160 impressions × 100. Export lists a teammate as poster; this is a team content result."
@@ -289,7 +320,7 @@
       "value": 490,
       "display": "490",
       "unit": "impressions",
-      "period": "Jun 2–Jul 29, 2026 export; post Jun 4",
+      "period": "Jun 2-Jul 29, 2026 export; post Jun 4",
       "attribution": "Divia LinkedIn account",
       "sourceId": "divia-linkedin",
       "note": "All posts worksheet; Raihan listed as poster."
@@ -300,7 +331,7 @@
       "value": 312,
       "display": "312",
       "unit": "impressions",
-      "period": "Jun 2–Jul 29, 2026 export; post Jun 8",
+      "period": "Jun 2-Jul 29, 2026 export; post Jun 8",
       "attribution": "Divia LinkedIn account",
       "sourceId": "divia-linkedin",
       "note": "All posts worksheet; Raihan listed as poster."
@@ -311,7 +342,7 @@
       "value": 160,
       "display": "160",
       "unit": "impressions",
-      "period": "Jun 2–Jul 29, 2026 export; post Jun 19",
+      "period": "Jun 2-Jul 29, 2026 export; post Jun 19",
       "attribution": "Divia LinkedIn team content",
       "sourceId": "divia-linkedin",
       "note": "104 clicks. Same result as 65.0% CTR; no individual credit assigned for posting."
@@ -323,7 +354,7 @@
       "target": 40,
       "display": "120",
       "unit": "Stories",
-      "period": "Oct 1–Nov 30, 2025",
+      "period": "Oct 1-Nov 30, 2025",
       "attribution": "TIRIZ / Pancarona team campaign",
       "sourceId": "tiriz-kpi",
       "note": "300% of target; 200% above target."
@@ -335,7 +366,7 @@
       "target": 8,
       "display": "16",
       "unit": "videos",
-      "period": "Oct 1–Nov 30, 2025",
+      "period": "Oct 1-Nov 30, 2025",
       "attribution": "TIRIZ / Pancarona team campaign",
       "sourceId": "tiriz-kpi",
       "note": "Instagram Reels mirrored to TikTok. 200% of target; 100% above target."
@@ -347,7 +378,7 @@
       "target": 1000,
       "display": "814.1",
       "unit": "accounts reached per feed post",
-      "period": "Oct 1–Nov 30, 2025",
+      "period": "Oct 1-Nov 30, 2025",
       "attribution": "TIRIZ Instagram account",
       "sourceId": "tiriz-kpi",
       "note": "81.41% of target; missed by 185.9 accounts per post. Reach and output are different measures."
@@ -359,7 +390,7 @@
       "target": 1500,
       "display": "3,221",
       "unit": "views per video",
-      "period": "Oct 1–Nov 30, 2025",
+      "period": "Oct 1-Nov 30, 2025",
       "attribution": "TIRIZ TikTok account",
       "sourceId": "tiriz-kpi",
       "note": "214.73% of target; 114.73% above target, rounded to two decimals."
@@ -371,7 +402,7 @@
       "target": 1000,
       "display": "17,256",
       "unit": "views per KOL piece",
-      "period": "Oct 1–Nov 30, 2025",
+      "period": "Oct 1-Nov 30, 2025",
       "attribution": "Four KOL campaign pieces",
       "sourceId": "tiriz-kpi",
       "note": "1,725.6% of target; 1,625.6% above target. 69,024 / 4 = 17,256."
@@ -382,7 +413,7 @@
       "value": 69024,
       "display": "69,024",
       "unit": "views",
-      "period": "Oct 1–Nov 30, 2025",
+      "period": "Oct 1-Nov 30, 2025",
       "attribution": "Four KOL campaign pieces",
       "sourceId": "tiriz-kol",
       "note": "Views across the four campaign pieces; not unique people reached."
@@ -393,66 +424,90 @@
       "value": 6072,
       "display": "6,072",
       "unit": "engagements",
-      "period": "Oct 1–Nov 30, 2025",
+      "period": "Oct 1-Nov 30, 2025",
       "attribution": "KOL campaign total",
       "sourceId": "tiriz-kol",
       "note": "Report label retained. Not attributed solely to Raihan."
     },
     {
       "id": "cakradata-tiktok-top",
-      "label": "Top TikTok views",
+      "label": "Top TikTok post views",
       "value": 13000,
       "display": "13,000",
       "unit": "views on the top-performing TikTok post",
-      "period": "Jan–Feb 2025 internship",
+      "period": "Selected top-performing post; analytics date not established",
       "attribution": "Cakradata content",
       "sourceId": "cakradata",
       "note": "Views on the top-performing post; not total account views or follower growth.",
-      "verification": "user-confirmed-2026-10-05"
+      "verification": "user-confirmed-2026-10-05",
+      "rolePeriod": "Jan-Feb 2025 internship"
     },
     {
       "id": "cakradata-instagram-top",
-      "label": "Top Instagram views",
+      "label": "Top Instagram post views",
       "value": 2000,
       "display": "2,000",
       "unit": "views on the top-performing Instagram post",
-      "period": "Jan–Feb 2025 internship",
+      "period": "Selected top-performing post; analytics date not established",
       "attribution": "Cakradata content",
       "sourceId": "cakradata",
       "note": "Views on the top-performing post; not total account views or follower growth.",
-      "verification": "user-confirmed-2026-10-05"
+      "verification": "user-confirmed-2026-10-05",
+      "rolePeriod": "Jan-Feb 2025 internship"
+    },
+    {
+      "id": "li-clicks",
+      "label": "Carousel clicks",
+      "value": 104,
+      "display": "104",
+      "unit": "clicks",
+      "period": "Jun 2-Jul 29, 2026 UTC export; post Jun 19",
+      "attribution": "Divia LinkedIn team content",
+      "sourceId": "divia-linkedin",
+      "note": "104 / 160 x 100 = 65.0% CTR."
+    },
+    {
+      "id": "tt-comparison",
+      "label": "Net followers vs. comparison period",
+      "value": 31.5,
+      "display": "+31.5%",
+      "unit": "change in net followers",
+      "period": "Jun 1-Jul 29, 2026",
+      "attribution": "Divia TikTok account",
+      "sourceId": "divia-tiktok",
+      "note": "Comparison of net followers, not total-follower growth."
     }
   ],
   "audience": {
     "title": "Who was following Divia?",
-    "period": "May 31–Jul 30, 2026",
+    "period": "May 31-Jul 30, 2026",
     "attribution": "Divia Instagram followers",
     "unit": "% of followers",
     "sourceId": "divia-audience",
-    "takeaway": "54.0% were aged 18–24. This helps guide student-oriented content; it does not prove every follower was a student.",
+    "takeaway": "54.0% were aged 18-24. This helps guide student-oriented content; it does not prove every follower was a student.",
     "rows": [
       {
-        "label": "13–17",
+        "label": "13-17",
         "value": 0.8
       },
       {
-        "label": "18–24",
+        "label": "18-24",
         "value": 54
       },
       {
-        "label": "25–34",
+        "label": "25-34",
         "value": 28.2
       },
       {
-        "label": "35–44",
+        "label": "35-44",
         "value": 7
       },
       {
-        "label": "45–54",
+        "label": "45-54",
         "value": 6.4
       },
       {
-        "label": "55–64",
+        "label": "55-64",
         "value": 2.3
       },
       {
@@ -466,7 +521,7 @@
       "id": "fikomnex",
       "name": "Fikomnex",
       "role": "Head of Sponsorship",
-      "period": "Oct–Dec 2024",
+      "period": "Oct-Dec 2024",
       "type": "Student event",
       "text": "Fikomnex is an annual career event organized by BEM Fikom Unpad, connecting communication students with career insights and opportunities. As Head of Sponsorship, I led a two-person team managing media partnerships with five Fikom Unpad student organizations.",
       "sourceId": "fikomnex",
@@ -485,15 +540,17 @@
           "label": "Fikom Unpad student-organization media partners"
         }
       ],
-      "logo": "logos/bem-transparent.webp",
+      "logo": "logos/bem-transparent-display.webp",
       "logoAlt": "BEM Fikom Unpad, organizer of Fikomnex",
-      "brandLabel": "Fikomnex · organized by BEM Fikom Unpad"
+      "brandLabel": "Fikomnex · organized by BEM Fikom Unpad",
+      "logoWidth": 600,
+      "logoHeight": 600
     },
     {
       "id": "hima",
       "name": "HIMA Mankom",
       "role": "Staff, Human Resources and Organizational Development Department",
-      "period": "Feb–Dec 2024",
+      "period": "Feb-Dec 2024",
       "type": "Student organization",
       "text": "HIMA Mankom represents Communication Management students at Padjadjaran University through student advocacy, organizational development and skill-building programs. I led a nine-person team and coordinated the Internship Program across eight divisions. 81 of 92 new students participated, approximately 88%. All established program KPIs were achieved.",
       "sourceId": "hima",
@@ -516,15 +573,17 @@
           "label": "Participants · ≈88%"
         }
       ],
-      "logo": "logos/hima-transparent.webp",
+      "logo": "logos/hima-display.webp",
       "logoAlt": "HIMA Mankom logo",
-      "brandLabel": "HIMA Mankom"
+      "brandLabel": "HIMA Mankom",
+      "logoWidth": 281,
+      "logoHeight": 281
     },
     {
       "id": "bem",
       "name": "BEM Fikom Unpad",
       "role": "Staff, Bureau of Organizational Synergy and Development",
-      "period": "Mar–Dec 2024",
+      "period": "Mar-Dec 2024",
       "type": "Student organization",
       "text": "BEM Fikom Unpad is the faculty’s highest student executive body, leading student advocacy, strategic initiatives and faculty-wide programs. I supervised the 14-member Department of Profession and Scientific Affairs, monitored performance and supported its programs. As Welcoming Party lead, I developed the concept and led fellow SPO staff. The Welcoming Party welcomed the new cabinet staff and met its established targets.",
       "sourceId": "bem",
@@ -543,15 +602,17 @@
           "label": "Welcoming Party"
         }
       ],
-      "logo": "logos/bem-transparent.webp",
+      "logo": "logos/bem-transparent-display.webp",
       "logoAlt": "BEM Fikom Unpad logo",
-      "brandLabel": "BEM Fikom Unpad"
+      "brandLabel": "BEM Fikom Unpad",
+      "logoWidth": 600,
+      "logoHeight": 600
     },
     {
       "id": "theatre",
       "name": "Home Theatre",
       "role": "Co-head of HR",
-      "period": "Jun–Dec 2024",
+      "period": "Jun-Dec 2024",
       "type": "Student theatre event",
       "text": "Hint of Merge Entertainment Theatre is a Fikom Unpad production where students express their talents, aspirations and critiques of current issues through theatre. I coordinated a 15-person HR team across nine divisions, handled recruitment and helped resolve internal conflicts. Supported the production’s people needs through recruitment and cross-division coordination.",
       "sourceId": "theatre",
@@ -570,15 +631,17 @@
           "label": "Divisions coordinated"
         }
       ],
-      "logo": "logos/home-theatre-transparent.webp",
+      "logo": "logos/home-theatre-transparent-display.webp",
       "logoAlt": "Home Theatre logo",
-      "brandLabel": "Home Theatre"
+      "brandLabel": "Home Theatre",
+      "logoWidth": 600,
+      "logoHeight": 489
     },
     {
       "id": "ideation",
       "name": "Ideation / Epicentrum",
       "role": "Event Management Staff",
-      "period": "Feb–Jun 2025",
+      "period": "Feb-Jun 2025",
       "type": "Student communication competition",
       "text": "Ideation, part of Epicentrum, is an international competition organized by Communication Management at Fikom Unpad. Participants address social issues through strategic communication and social campaign design. As Event Management Staff, I developed concepts for four event segments and delivered the event with a seven-person team. Turned the segment concepts into activities for the international communication competition.",
       "sourceId": "ideation",
@@ -597,45 +660,47 @@
           "label": "People in the delivery team"
         }
       ],
-      "logo": "logos/ideation-transparent.png",
+      "logo": "logos/ideation-transparent-display.webp",
       "logoAlt": "Ideation logo",
-      "brandLabel": "Ideation / Epicentrum"
+      "brandLabel": "Ideation / Epicentrum",
+      "logoWidth": 600,
+      "logoHeight": 600
     }
   ],
   "capabilities": [
     {
-      "name": "Content strategy & copy",
-      "tools": "Editorial calendars · AIDA · Google Workspace",
-      "example": "Divia's LinkedIn activation and TIRIZ's content plan",
-      "project": "divia",
-      "icon": "quill"
+      "name": "Content strategy & copywriting",
+      "example": "Platform-specific LinkedIn planning at Divia and student-focused technology explainers at Cakradata.",
+      "project": "divia"
     },
     {
-      "name": "Analytics & evaluation",
-      "tools": "Platform insights · Excel · KPI reporting",
-      "example": "Target-versus-actual evaluation and audience interpretation",
-      "project": "tiriz",
-      "icon": "chart"
+      "name": "Social analytics & campaign evaluation",
+      "example": "TIRIZ target-versus-actual evaluation and Divia audience interpretation.",
+      "project": "tiriz"
     },
     {
-      "name": "Partnership communication",
-      "tools": "Outreach · Partnership workflows · Company profiles",
-      "example": "Divia media partnerships and Fikomnex outreach",
-      "project": "divia",
-      "icon": "flag"
+      "name": "Partnership communication & outreach",
+      "example": "Divia partnership materials and Fikomnex media-partner outreach.",
+      "project": "fikomnex"
     },
     {
-      "name": "Creative team coordination",
-      "tools": "Event planning · Cross-division communication · Canva",
-      "example": "Ideation, HIMA Mankom and Home Theatre",
-      "project": "experience",
-      "icon": "pack"
+      "name": "Event planning & cross-division coordination",
+      "example": "Four Ideation event segments and the HIMA Internship Program across eight divisions.",
+      "project": "ideation"
+    },
+    {
+      "name": "Recruitment & team coordination",
+      "example": "A 15-person HR team at Home Theatre, including recruitment and internal conflict resolution.",
+      "project": "theatre"
     }
   ],
   "certification": {
     "name": "Fundamentals of digital marketing",
     "date": "Completed November 23, 2025",
-    "sourceId": "certificate"
+    "sourceId": "certificate",
+    "completionId": "424502059",
+    "file": "documents/Fundamentals_of_digital_marketing.pdf",
+    "publicUrl": "https://rehunss.github.io/portfolio-updated/documents/Fundamentals_of_digital_marketing.pdf"
   },
   "toolGroups": [
     {
@@ -643,22 +708,22 @@
       "description": "Collaborative documents, content calendars, presentations and file organization.",
       "apps": [
         {
-          "name": "Docs",
+          "name": "Google Docs",
           "icon": "logos/apps/google-docs-hires.png",
           "use": "Writing & collaboration"
         },
         {
-          "name": "Sheets",
+          "name": "Google Sheets",
           "icon": "logos/apps/google-sheets-hires.png",
           "use": "Content calendars & tracking"
         },
         {
-          "name": "Slides",
+          "name": "Google Slides",
           "icon": "logos/apps/google-slides-hires.png",
           "use": "Presentations"
         },
         {
-          "name": "Drive",
+          "name": "Google Drive",
           "icon": "logos/apps/google-drive-hires.png",
           "use": "File organization"
         }
@@ -681,7 +746,7 @@
         {
           "name": "Excel",
           "icon": "logos/apps/excel.svg",
-          "use": "Simple data processing"
+          "use": "Simple data processing & reporting"
         }
       ]
     },
@@ -696,5 +761,210 @@
         }
       ]
     }
-  ]
+  ],
+  "settings": {
+    "publicSiteUrl": "https://rehunss.github.io/portfolio-updated/",
+    "publicDocumentBase": "https://rehunss.github.io/portfolio-updated/",
+    "modernPublished": true
+  },
+  "media": {
+    "portrait": {
+      "src": "assets/portrait-960.webp",
+      "width": 1536,
+      "height": 2048,
+      "variants": [
+        {
+          "src": "assets/portrait-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/portrait-960.webp",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "src": "assets/portrait-1440.webp",
+          "width": 1440,
+          "height": 1920
+        }
+      ]
+    },
+    "divia": {
+      "src": "assets/divia-960.webp",
+      "width": 940,
+      "height": 631,
+      "variants": [
+        {
+          "src": "assets/divia-480.webp",
+          "width": 480,
+          "height": 322
+        },
+        {
+          "src": "assets/divia-960.webp",
+          "width": 940,
+          "height": 631
+        },
+        {
+          "src": "assets/divia-1440.webp",
+          "width": 940,
+          "height": 631
+        }
+      ]
+    },
+    "tiriz": {
+      "src": "assets/tiriz-960.webp",
+      "width": 825,
+      "height": 1100,
+      "variants": [
+        {
+          "src": "assets/tiriz-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/tiriz-960.webp",
+          "width": 825,
+          "height": 1100
+        },
+        {
+          "src": "assets/tiriz-1440.webp",
+          "width": 825,
+          "height": 1100
+        }
+      ]
+    },
+    "cakradata": {
+      "src": "assets/cakradata-960.webp",
+      "width": 495,
+      "height": 1100,
+      "variants": [
+        {
+          "src": "assets/cakradata-480.webp",
+          "width": 480,
+          "height": 1067
+        },
+        {
+          "src": "assets/cakradata-960.webp",
+          "width": 495,
+          "height": 1100
+        },
+        {
+          "src": "assets/cakradata-1440.webp",
+          "width": 495,
+          "height": 1100
+        }
+      ]
+    },
+    "fikomnex": {
+      "src": "assets/fikomnex-960.webp",
+      "width": 1600,
+      "height": 900,
+      "variants": [
+        {
+          "src": "assets/fikomnex-480.webp",
+          "width": 480,
+          "height": 270
+        },
+        {
+          "src": "assets/fikomnex-960.webp",
+          "width": 960,
+          "height": 540
+        },
+        {
+          "src": "assets/fikomnex-1440.webp",
+          "width": 1440,
+          "height": 810
+        }
+      ]
+    },
+    "hima": {
+      "src": "assets/hima-960.webp",
+      "width": 1108,
+      "height": 1477,
+      "variants": [
+        {
+          "src": "assets/hima-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/hima-960.webp",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "src": "assets/hima-1440.webp",
+          "width": 1108,
+          "height": 1477
+        }
+      ]
+    },
+    "bem": {
+      "src": "assets/bem-960.webp",
+      "width": 960,
+      "height": 1706,
+      "variants": [
+        {
+          "src": "assets/bem-480.webp",
+          "width": 480,
+          "height": 853
+        },
+        {
+          "src": "assets/bem-960.webp",
+          "width": 960,
+          "height": 1706
+        },
+        {
+          "src": "assets/bem-1440.webp",
+          "width": 960,
+          "height": 1706
+        }
+      ]
+    },
+    "theatre": {
+      "src": "assets/theatre-960.webp",
+      "width": 1536,
+      "height": 2048,
+      "variants": [
+        {
+          "src": "assets/theatre-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/theatre-960.webp",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "src": "assets/theatre-1440.webp",
+          "width": 1440,
+          "height": 1920
+        }
+      ]
+    },
+    "ideation": {
+      "src": "assets/ideation-960.webp",
+      "width": 1108,
+      "height": 1477,
+      "variants": [
+        {
+          "src": "assets/ideation-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "assets/ideation-960.webp",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "src": "assets/ideation-1440.webp",
+          "width": 1108,
+          "height": 1477
+        }
+      ]
+    }
+  }
 }

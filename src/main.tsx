@@ -1,11 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '@fontsource/silkscreen/latin-400.css';
-import '@fontsource/source-sans-3/latin-400.css';
-import '@fontsource/source-sans-3/latin-600.css';
-import '@fontsource/source-sans-3/latin-700.css';
 import App from './App';
+import PrintPortfolio from './PrintPortfolio';
 import './styles.css';
-const root=document.getElementById('root')!;
-if(root.hasChildNodes())ReactDOM.hydrateRoot(root,<React.StrictMode><App/></React.StrictMode>);
-else ReactDOM.createRoot(root).render(<React.StrictMode><App/></React.StrictMode>);
+ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode>{new URLSearchParams(location.search).get('print')==='1'?<PrintPortfolio/>:<App/>}</React.StrictMode>);

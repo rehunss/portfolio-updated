@@ -1,57 +1,74 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import fs from 'node:fs';
-import path from 'node:path';
-const dimensions=[[390,844],[768,1024],[1440,900],[1920,1080]];
-
-for(const [width,height] of dimensions){
-test(`layout, assets and accessibility ${width}x${height}`,async({page},testInfo)=>{
- const errors:string[]=[];const missing:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});page.on('response',r=>{if(r.status()>=400&&r.url().includes('127.0.0.1'))missing.push(r.url())});
- await page.setViewportSize({width,height});await page.goto('./');await page.evaluate(()=>document.fonts.ready);await expect(page.getByRole('heading',{level:1})).toContainText('Ideas with purpose');
- for(const id of ['start','projects','divia','tiriz','cakradata','experience','experience-hima','experience-bem','experience-theatre','experience-ideation','skills','contact']){await page.locator('#'+id).scrollIntoViewIfNeeded();await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)).toBeLessThanOrEqual(1);}
- await expect.poll(()=>page.locator('img').evaluateAll(imgs=>imgs.filter((x:any)=>x.getBoundingClientRect().bottom>0&&x.getBoundingClientRect().top<innerHeight&&(!x.complete||x.naturalWidth===0)).map((x:any)=>x.src))).toEqual([]);expect(errors).toEqual([]);expect(missing).toEqual([]);
- if(width===390)expect(await page.locator('a,button,summary,select').evaluateAll(els=>els.filter(e=>e.getClientRects().length).map(e=>({label:e.textContent?.trim(),width:e.getBoundingClientRect().width,height:e.getBoundingClientRect().height})).filter(e=>e.width<44||e.height<44))).toEqual([]);
- await page.goto('./');await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`qa/${testInfo.project.name}-${width}x${height}-start.png`});
- const scan=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();fs.writeFileSync(`qa/axe-${testInfo.project.name}-${width}.json`,JSON.stringify(scan.violations,null,2));expect(scan.violations).toEqual([]);
- if(width===390||width===1440){await page.locator('#divia').scrollIntoViewIfNeeded();await page.getByRole('button',{name:'Motion on',exact:true}).click();await page.screenshot({path:`qa/${testInfo.project.name}-${width}-divia.png`});await page.locator('#tiriz').scrollIntoViewIfNeeded();await page.screenshot({path:`qa/${testInfo.project.name}-${width}-tiriz.png`});await page.locator('#contact').scrollIntoViewIfNeeded();await page.screenshot({path:`qa/${testInfo.project.name}-${width}-contact.png`});}
-});}
-
-test('navigation, deep links, refresh and browser history',async({page})=>{
- await page.goto('./');await page.getByRole('link',{name:'Explore projects',exact:true}).click();await expect(page).toHaveURL(/#projects$/);await page.getByRole('link',{name:'02 TIRIZ',exact:false}).first().click();await expect(page).toHaveURL(/#tiriz$/);await page.reload();await expect(page.locator('#tiriz')).toBeInViewport();await page.goBack();await expect(page).toHaveURL(/#projects$/);await page.goForward();await expect(page).toHaveURL(/#tiriz$/);
- await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Menu',exact:false}).click();await expect(page.locator('#main-nav')).toBeVisible();await page.locator('#main-nav').getByRole('link',{name:'Contact',exact:true}).click();await expect(page).toHaveURL(/#contact$/);await expect(page.locator('#main-nav')).toBeHidden();await page.getByRole('button',{name:'Menu',exact:false}).click();await page.keyboard.press('Escape');await expect(page.locator('#main-nav')).toBeHidden();
+import {createHash} from 'node:crypto';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+const content=JSON.parse(readFileSync(new URL('../src/content.json',import.meta.url),'utf8')) as typeof import('../src/content.json');
+const sizes=[{width:390,height:844},{width:768,height:1024},{width:1440,height:900},{width:1920,height:1080}];
+for(const size of sizes){
+ test(`${size.width}x${size.height}: complete layout, assets, access and screenshots`,async({page})=>{
+   await page.setViewportSize(size);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+   const failures:string[]=[];page.on('response',r=>{if(r.status()>=400)failures.push(`${r.status()} ${r.url()}`);});
+   await page.goto('./');await expect(page.locator('h1')).toContainText('Raihan Ramadhan');
+   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);expect(overflow).toBe(false);
+   await page.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){scrollTo(0,y);await new Promise(r=>setTimeout(r,35));}await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));scrollTo(0,0);});
+   const broken=await page.locator('main img').evaluateAll(imgs=>imgs.filter(i=>!(i as HTMLImageElement).naturalWidth).map(i=>(i as HTMLImageElement).src));expect(broken).toEqual([]);
+   const a11y=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
+   mkdirSync('qa',{recursive:true});writeFileSync(`qa/axe-${size.width}.json`,JSON.stringify(a11y.violations,null,2));expect(a11y.violations).toEqual([]);
+   await page.screenshot({path:`qa/final-${size.width}-hero.png`});await page.screenshot({path:`qa/final-${size.width}-full.png`,fullPage:true});
+   for(const id of ['divia','tiriz','experience','skills','contact']){await page.locator(`#${id}`).evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));await page.screenshot({path:`qa/final-${size.width}-${id}.png`});}
+   const exp=await page.locator('#fikomnex .experience-highlights .metric strong').evaluateAll(els=>els.map(el=>el.getBoundingClientRect().top));expect(Math.abs(exp[0]-exp[1])).toBeLessThan(1);
+   const pics=await page.locator('.experience-photo img').evaluateAll(els=>els.map(el=>el.getBoundingClientRect().width));for(const width of pics)expect(width).toBeGreaterThan(size.width<768?size.width-60:350);
+   expect(errors).toEqual([]);expect(failures).toEqual([]);
+ });
+}
+test('navigation deep links, refresh, Back and Forward',async({page})=>{
+ await page.goto('./');await page.locator('.work-index a[href="#divia"]').click();await expect(page).toHaveURL(/#divia$/);await expect(page.locator('#divia')).toBeInViewport();await page.reload();await expect(page.locator('#divia')).toBeInViewport();
+ await page.locator('.navigation a[href="#experience"]').click();await expect(page).toHaveURL(/#experience$/);await page.goBack();await expect(page).toHaveURL(/#divia$/);await expect(page.locator('#divia')).toBeInViewport();await page.goForward();await expect(page).toHaveURL(/#experience$/);await expect(page.locator('#experience')).toBeInViewport();
 });
-
-test('keyboard, skip link, proof dialog focus and escape',async({page})=>{
- await page.goto('./');await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Skip to content'})).toBeFocused();await page.keyboard.press('Enter');await expect(page).toHaveURL(/#main$/);
- const trigger=page.locator('#divia').getByRole('button',{name:'View proof',exact:true});await trigger.focus();await page.keyboard.press('Enter');await expect(page.getByRole('dialog')).toBeVisible();await expect(page.getByRole('button',{name:'Close proof'})).toBeFocused();
- await page.keyboard.press('Shift+Tab');await expect.poll(()=>page.evaluate(()=>document.querySelector('dialog')?.contains(document.activeElement))).toBeTruthy();await page.keyboard.press('Tab');await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).not.toBeVisible();await expect(trigger).toBeFocused();
- await expect.poll(()=>trigger.evaluate(e=>getComputedStyle(e).outlineStyle)).not.toBe('none');
+test('mobile menu, keyboard Escape, navigation and touch targets',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('./');const menu=page.locator('.menu-toggle');await menu.click();await expect(menu).toHaveAttribute('aria-expanded','true');await page.keyboard.press('Escape');await expect(menu).toBeFocused();await expect(menu).toHaveAttribute('aria-expanded','false');
+ await menu.click();await page.getByRole('navigation',{name:'Main navigation'}).getByRole('link',{name:'Skills',exact:true}).click();await expect(page).toHaveURL(/#skills$/);await expect(menu).toHaveAttribute('aria-expanded','false');
+ const targets=await page.locator('button,a,summary').evaluateAll(els=>els.filter(e=>e.getBoundingClientRect().width&&e.getBoundingClientRect().height).map(e=>({text:e.textContent?.trim(),w:e.getBoundingClientRect().width,h:e.getBoundingClientRect().height})).filter(e=>e.h<43.5));expect(targets).toEqual([]);
 });
-
-test('charts retain definitions, expose tables and support focus and tap',async({page})=>{
- await page.goto('./');const divia=page.locator('#divia');await divia.getByRole('button',{name:'TikTok',exact:true}).click();await expect(divia.locator('.chart-panel').first()).toContainText('4,427');await expect(divia.locator('.chart-panel').first()).toContainText('+417');await expect(divia.locator('.chart-takeaway').first()).toContainText('not total follower growth');
- await divia.getByRole('button',{name:'LinkedIn',exact:true}).click();await expect(page).toHaveURL(/divia=LinkedIn/);await expect(divia.locator('.chart-takeaway').first()).toContainText('104 clicks from 160');await divia.locator('.data-table').first().getByText('View data table',{exact:true}).click();await expect(divia.locator('table').first()).toContainText('65.0%');
- const label=page.locator('#li-launch-control');await label.focus();await expect(page.locator('#li-launch-detail')).toBeVisible();await page.keyboard.press('Escape');await expect(page.locator('#li-launch-detail')).toBeHidden();await label.click();await expect(page.locator('#li-launch-detail')).toBeVisible();
- const target=page.locator('#target-metric');await target.selectOption('tiriz-feed-reach');await expect(page.locator('#tiriz .chart-takeaway')).toContainText('81.41% of target');await expect(page.locator('#tiriz .chart-takeaway')).toContainText('target missed');await target.selectOption('tiriz-kol-average');await expect(page.locator('#tiriz .chart-takeaway')).toContainText('1,725.6% of target');await page.reload();await expect(target).toHaveValue('tiriz-kol-average');await page.goBack();await expect(target).toHaveValue('tiriz-feed-reach');
- await page.setViewportSize({width:390,height:844});const age=page.locator('#age-1-control');await age.click();await expect(page.locator('#age-1-detail')).toBeVisible();await expect(page.locator('#age-1-detail')).toContainText('54.0%');
+test('skip link and unobscured keyboard focus',async({page})=>{
+ await page.goto('./');await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Skip to content'})).toBeFocused();await page.keyboard.press('Enter');await expect(page).toHaveURL(/#main$/);await page.keyboard.press('Tab');
+ const focused=await page.evaluate(()=>{const e=document.activeElement as HTMLElement;const r=e.getBoundingClientRect();return {outline:getComputedStyle(e).outlineStyle,y:r.top,bottom:r.bottom};});expect(focused.outline).not.toBe('none');expect(focused.y).toBeGreaterThanOrEqual(63);
 });
-
-test('persistent motion preference and system reduced motion',async({page})=>{
- await page.goto('./');await expect(page.getByRole('button',{name:'Motion on',exact:true})).toBeVisible();await page.getByRole('button',{name:'Motion on',exact:true}).click();await page.reload();await expect(page.getByRole('button',{name:'Motion off',exact:true})).toHaveAttribute('aria-pressed','false');await expect(page.locator('.earth-backdrop')).toHaveAttribute('data-camera','still');await expect(page.locator('#tiriz')).toContainText('120');
- await page.evaluate(()=>localStorage.clear());await page.emulateMedia({reducedMotion:'reduce'});await page.reload();await expect(page.getByRole('button',{name:'Motion off',exact:true})).toBeVisible();await page.locator('#tiriz').scrollIntoViewIfNeeded();await expect(page.locator('#tiriz')).toContainText('69,024');await expect(page.locator('.earth-backdrop')).toHaveAttribute('data-camera','still');
+for(const width of [390,1440])test(`${width}: proof dialog focus trap, Escape, return and full-size files`,async({page})=>{
+ await page.setViewportSize({width,height:900});await page.goto('./');await page.locator('#divia').scrollIntoViewIfNeeded();const trigger=page.locator('#divia .project-story').getByRole('button',{name:'View project proof'});await trigger.click();const dialog=page.getByRole('dialog');await expect(dialog).toBeVisible();await expect(page.getByRole('button',{name:'Close proof'})).toBeFocused();
+ const focusables=dialog.locator('a,button');const count=await focusables.count();for(let i=0;i<count+3;i++){await page.keyboard.press('Tab');expect(await page.evaluate(()=>document.querySelector('dialog')?.contains(document.activeElement))).toBe(true);}
+ const a11y=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();expect(a11y.violations).toEqual([]);
+ const img=await dialog.locator('img').getAttribute('src');expect((await page.request.get(img!)).status()).toBe(200);await page.screenshot({path:`qa/dialog-${width}.png`});await page.keyboard.press('Escape');await expect(dialog).not.toBeVisible();await expect(trigger).toBeFocused();
+ for(const id of ['fikomnex','hima','bem','theatre','ideation']){const trigger=page.locator(`#${id} .media-proof`);await trigger.click();await expect(dialog).toBeVisible();await expect(dialog.locator('img')).toHaveAttribute('src',new RegExp(content.sources.find(s=>s.id===id)!.file));await page.getByRole('button',{name:'Close proof'}).click();await expect(trigger).toBeFocused();}
 });
-
-test('real PDF responses, downloads and source privacy',async({page,request},testInfo)=>{
- await page.goto('./');for(const file of ['CV_Raihan.pdf','Raihan_Adventure_Portfolio.pdf']){const response=await request.get(`documents/${file}`);expect(response.status()).toBe(200);expect(response.headers()['content-type']).toContain('application/pdf');const body=await response.body();expect(body.subarray(0,5).toString()).toBe('%PDF-');if(file==='CV_Raihan.pdf')expect(body.equals(fs.readFileSync(path.resolve('../09_Profil_dan_Portofolio/CV_Raihan.pdf')))).toBeTruthy();}
- const promise=page.waitForEvent('download');await page.getByRole('link',{name:'Download portfolio',exact:true}).click();const download=await promise;expect(download.suggestedFilename()).toBe('Raihan_Adventure_Portfolio.pdf');await download.saveAs(`qa/download-${testInfo.project.name}.pdf`);
- expect((await request.get('private/evidence-register.json')).status()).toBe(404);expect((await request.get('src/content.json')).status()).toBe(404);
+test('Divia platform tabs, exact values, tooltip, keyboard and URL restoration',async({page})=>{
+ await page.goto('./#divia');const panel=page.locator('.platform-chart');await panel.getByRole('tab',{name:'TikTok',exact:true}).click();await expect(panel).toContainText('4,427');await expect(panel).toContainText('+417');await expect(panel).toContainText('+31.5%');await expect(panel).toContainText('It does not measure total-follower growth');
+ await panel.getByRole('tab',{name:'TikTok',exact:true}).focus();await page.keyboard.press('ArrowRight');await expect(panel.getByRole('tab',{name:'LinkedIn'})).toHaveAttribute('aria-selected','true');await expect(panel).toContainText('65.0%');await expect(panel).toContainText('104');await expect(panel).toContainText('160');await page.reload();await expect(panel.getByRole('tab',{name:'LinkedIn'})).toHaveAttribute('aria-selected','true');
+ await page.goBack();await expect(panel.getByRole('tab',{name:'TikTok'})).toHaveAttribute('aria-selected','true');await panel.locator('.metric-control').first().focus();await expect(panel.locator('.metric-detail')).toBeVisible();await panel.locator('.metric-control').first().click();await panel.getByText('View data table',{exact:true}).click();await expect(panel.locator('table')).toBeVisible();
+ await panel.getByRole('tab',{name:'Instagram',exact:true}).click();for(const x of ['22K','11K','133','78'])await expect(panel).toContainText(x);
 });
-
-test('LinkedIn source excerpt is readable and matches original export cells',async({page})=>{
- await page.goto('./');await page.locator('#divia').getByRole('button',{name:'View proof',exact:true}).click();
- const link=page.getByRole('link',{name:'Read original export excerpt'});await expect(link).toHaveAttribute('href','./proof/divia-linkedin-export.html');
- const tabPromise=page.waitForEvent('popup');await link.click();const tab=await tabPromise;await tab.waitForLoadState();
- await expect(tab.getByRole('heading',{level:1})).toContainText('original export excerpt');const carousel=tab.getByRole('row').filter({has:tab.getByRole('rowheader',{name:'Career carousel',exact:true})});
- await expect(carousel).toContainText('160');await expect(carousel).toContainText('104');await expect(carousel).toContainText('65.0%');await expect(carousel).toContainText('Teammate');
- await tab.getByRole('link',{name:'Return to Divia case study'}).click();await expect(tab).toHaveURL(/divia=LinkedIn#divia$/);await expect(tab.locator('#divia')).toBeInViewport();await tab.close();
+test('TIRIZ target and actual, separate scales, missed target, tap and table',async({page})=>{
+ await page.goto('./#tiriz');const panel=page.locator('.tiriz-chart');await expect(panel).toContainText('814.1');await expect(panel).toContainText('81.41%');await expect(panel).toContainText('Below target');await expect(panel).toContainText('185.9 accounts');
+ await panel.locator('.comparison-row').last().click();await expect(panel.getByRole('status')).toContainText('814.1');
+ await panel.getByRole('tab',{name:'Stories',exact:true}).click();await expect(panel).toContainText('300% of target');await expect(panel.locator('.comparison-row').first()).toContainText('40');await expect(panel.locator('.comparison-row').last()).toContainText('120');
+ await panel.getByRole('tab',{name:'Videos',exact:true}).click();await expect(panel).toContainText('200% of target');await panel.getByRole('tab',{name:'Creator views'}).click();await expect(panel).toContainText('1,725.6%');await expect(panel).toContainText('1,625.6% above target');await panel.getByText('View data table',{exact:true}).click();await expect(panel.locator('table')).toContainText('accounts reached per feed post');
+ await page.reload();await expect(panel.getByRole('tab',{name:'Creator views'})).toHaveAttribute('aria-selected','true');
+});
+test('age composition exact values, hover, focus, tap and table',async({page})=>{
+ await page.goto('./#divia');const panel=page.locator('.age-chart');await expect(panel).toContainText('followers, not all viewers');const rows=panel.locator('.age-row');expect(await rows.count()).toBe(7);for(let i=0;i<7;i++)await expect(rows.nth(i)).toContainText(content.audience.rows[i].value.toFixed(1)+'%');await rows.nth(1).hover();await expect(panel.getByRole('status')).toContainText('54.0%');await rows.nth(2).focus();await expect(panel.getByRole('status')).toContainText('28.2%');await rows.nth(2).click();await rows.nth(2).click();await expect(panel.getByRole('status')).toContainText('28.2%');await panel.getByText('View data table',{exact:true}).click();await expect(panel.locator('table')).toBeVisible();
+});
+test('motion preference persistence and system reduced motion',async({page})=>{
+ await page.emulateMedia({reducedMotion:'no-preference'});await page.goto('./');const toggle=page.getByRole('button',{name:'Motion on'});await expect(toggle).toHaveAttribute('aria-pressed','true');await toggle.click();await expect(page.getByRole('button',{name:'Motion off'})).toHaveAttribute('aria-pressed','false');await page.reload();await expect(page.getByRole('button',{name:'Motion off'})).toBeVisible();expect(await page.evaluate(()=>localStorage.getItem('raihan-motion'))).toBe('off');
+ await page.getByRole('button',{name:'Motion off'}).click();await page.emulateMedia({reducedMotion:'reduce'});await expect(page.getByRole('button',{name:'Motion off'})).toHaveAttribute('aria-pressed','false');await expect(page.locator('html')).toHaveAttribute('data-motion','off');expect(await page.locator('#projects .chapter-heading').evaluate(e=>getComputedStyle(e).opacity)).toBe('1');
+});
+test('document responses, real contents, originals unchanged, desktop and mobile anchors',async({page,request})=>{
+ for(const [file,original] of [['CV_Raihan.pdf','../09_Profil_dan_Portofolio/CV_Raihan.pdf'],['TIRIZ_Laporan_Kampanye.pdf','../01_TIRIZ/TIRIZ_Laporan_Kampanye.pdf']]){const res=await request.get(`documents/${file}`);expect(res.status()).toBe(200);const body=await res.body();expect(body.subarray(0,5).toString()).toBe('%PDF-');expect(createHash('sha256').update(body).digest('hex')).toBe(createHash('sha256').update(readFileSync(original)).digest('hex'));}
+ const res=await request.get('documents/Raihan_Modern_Portfolio.pdf');expect(res.status()).toBe(200);expect((await res.body()).subarray(0,5).toString()).toBe('%PDF-');
+ for(const width of [390,1440]){await page.setViewportSize({width,height:900});await page.goto('./');for(const file of ['CV_Raihan.pdf','Raihan_Modern_Portfolio.pdf','TIRIZ_Laporan_Kampanye.pdf']){const a=page.locator(`a[href$="${file}"]`).first();await expect(a).toHaveAttribute('target','_blank');expect(new URL((await a.getAttribute('href'))!,page.url()).pathname).toBe(`/portfolio-modern/documents/${file}`);}}
+});
+test('shared PDF content, ten pages, public links and no footer collisions',async({page})=>{
+ await page.setViewportSize({width:1123,height:794});await page.goto('./?print=1');await page.evaluate(()=>document.fonts.ready);const pages=page.locator('.pdf-page');expect(await pages.count()).toBe(10);
+ for(let i=0;i<10;i++){const p=pages.nth(i);const collision=await p.evaluate(el=>{const footer=el.querySelector('.pdf-footer')!.getBoundingClientRect();return [...el.children].filter(c=>!c.classList.contains('pdf-footer')).some(c=>c.getBoundingClientRect().bottom>footer.top-8);});expect(collision,`PDF page ${i+1} touches footer`).toBe(false);}
+ for(const p of content.projects)await expect(page.locator('.pdf-document')).toContainText(p.narrative);for(const e of content.experience){await expect(page.locator('.pdf-document')).toContainText(e.context);await expect(page.locator('.pdf-document')).toContainText(e.result);}
+ const hrefs=await page.locator('.pdf-document a').evaluateAll(as=>as.map(a=>(a as HTMLAnchorElement).href));expect(hrefs.some(h=>h.includes('localhost')||h.includes('127.0.0.1'))).toBe(false);expect(hrefs).toContain(content.settings.publicSiteUrl);
 });

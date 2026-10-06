@@ -1,2 +1,0 @@
-import {asset,content} from './content';
-export function ToolsInventory(){return <div className="tools-inventory"><h3>Tools I work with</h3><div className="tool-groups">{content.toolGroups.map(group=><article className="tool-group" key={group.name}><h4>{group.name}</h4><p>{group.description}</p><ul>{group.apps.map(app=><li key={app.name}><img src={asset(app.icon)} alt={`${app.name} logo`} width="64" height="64" loading="lazy"/><div><strong>{app.name}</strong><span>{app.use}</span></div></li>)}</ul></article>)}</div></div>}
