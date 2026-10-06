@@ -1270,7 +1270,14 @@
               "tt-transport-saves",
               "tt-transport-shares"
             ],
-            "proofId": "divia-tt-transport"
+            "proofId": "divia-tt-transport",
+            "cover": {
+              "file": "assets/divia-posts/divia-transport-tiktok.jpeg",
+              "alt": "TikTok cover: Cara Mudah Navigasi Angkutan Kampus Unpad",
+              "width": 1704,
+              "height": 2132,
+              "postUrl": "https://www.tiktok.com/@diviaunpadtv/photo/7667092394432662805"
+            }
           }
         ]
       },
@@ -1288,7 +1295,14 @@
               "tt-tour-follows",
               "tt-tour-watch"
             ],
-            "proofId": "divia-tt-tour"
+            "proofId": "divia-tt-tour",
+            "cover": {
+              "file": "assets/divia-posts/divia-tour-tiktok.webp",
+              "alt": "TikTok cover: POV: Keliling Fakultas di Unpad",
+              "width": 540,
+              "height": 720,
+              "postUrl": "https://www.tiktok.com/@diviaunpadtv/video/7662964452794404117"
+            }
           },
           {
             "name": "Instagram",
@@ -1298,7 +1312,14 @@
               "ig-tour-viewers",
               "ig-tour-follows"
             ],
-            "proofId": "divia-ig-tour"
+            "proofId": "divia-ig-tour",
+            "cover": {
+              "file": "assets/divia-posts/divia-tour-instagram.jpg",
+              "alt": "Instagram cover: POV: Keliling Fakultas di Unpad",
+              "width": 540,
+              "height": 960,
+              "postUrl": "https://www.instagram.com/diviaunpadtv/reel/Da18rJrhbfM/"
+            }
           }
         ]
       },
@@ -1316,7 +1337,14 @@
               "tt-ambassadors-likes",
               "tt-ambassadors-shares"
             ],
-            "proofId": "divia-tt-ambassadors"
+            "proofId": "divia-tt-ambassadors",
+            "cover": {
+              "file": "assets/divia-posts/divia-ambassadors-tiktok.avif",
+              "alt": "TikTok cover: Meet The Ambassadors / Festival Budaya Fikom Unpad",
+              "width": 540,
+              "height": 720,
+              "postUrl": "https://www.tiktok.com/@diviaunpadtv/video/7655951176852147476"
+            }
           },
           {
             "name": "Instagram",
@@ -1326,7 +1354,14 @@
               "ig-ambassadors-likes",
               "ig-ambassadors-watch"
             ],
-            "proofId": "divia-ig-ambassadors"
+            "proofId": "divia-ig-ambassadors",
+            "cover": {
+              "file": "assets/divia-posts/divia-ambassadors-instagram.jpg",
+              "alt": "Instagram cover: Meet The Ambassadors / Festival Budaya Fikom Unpad",
+              "width": 540,
+              "height": 960,
+              "postUrl": "https://www.instagram.com/diviaunpadtv/reel/DaFBiw1hznL/"
+            }
           }
         ]
       }

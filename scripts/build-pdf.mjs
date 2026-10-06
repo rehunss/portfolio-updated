@@ -12,7 +12,7 @@ try{
   const pages=await page.locator('.pdf-page').count();
   if(pages!==10)throw new Error(`Expected 10 designed pages, found ${pages}`);
   const overflow=await page.locator('.pdf-page').evaluateAll(els=>els.map((el,i)=>({page:i+1,overflow:el.scrollHeight>el.clientHeight+1,footerCollision:[...el.children].filter(c=>!c.classList.contains('pdf-footer')).some(c=>c.getBoundingClientRect().bottom>el.querySelector('.pdf-footer').getBoundingClientRect().top-8)})).filter(x=>x.overflow||x.footerCollision));
-  if(overflow.length)throw new Error(`Page overflow: ${JSON.stringify(overflow)}`);
+  if(overflow.length){await mkdir('qa/pdf',{recursive:true});await page.locator('.pdf-page').nth(overflow[0].page-1).screenshot({path:'qa/pdf/layout-overflow.png'});console.log(await page.locator('.pdf-page').nth(overflow[0].page-1).evaluate(el=>({height:el.clientHeight,scroll:el.scrollHeight,children:[...el.children].map(c=>({class:c.className,height:c.getBoundingClientRect().height,bottom:c.getBoundingClientRect().bottom-el.getBoundingClientRect().top}))})));throw new Error(`Page overflow: ${JSON.stringify(overflow)}`);}
   await mkdir('output/pdf',{recursive:true});
   const path='output/pdf/Raihan_Modern_Portfolio.pdf';
   await page.pdf({path,format:'A4',landscape:true,printBackground:true,preferCSSPageSize:true,displayHeaderFooter:false,tagged:true,outline:true});
