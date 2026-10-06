@@ -11,9 +11,9 @@ norm=lambda s:re.sub(r'-\s+', '-', ' '.join(s.split()))
 for p in data['projects']: assert norm(p['narrative']) in norm(joined),p['id']
 for e in data['experience']:
     for k in ['context','contribution','result']: assert norm(e[k]) in norm(joined),(e['id'],k)
-for v in ['22K','11K','133','78','4,427','417','31.5%','160','104','65.0%','814.1','81.41%','69,024','6,072','17,256','13,000','2,000','424502059']:
+for v in ['22K','11K','133','78','4,427','417','31.5%','160','104','65.0%','814.1','81.41%','69,024','6,072','17,256','13,000','2,000','424502059','9,898','180','9,745','3,765','2,471','401.1K','3.1K']:
     assert v in joined,v
-for term in ['800%','GPA','180 saves','game','underground']: assert term.lower() not in joined.lower(),term
+for term in ['800%','GPA','game','underground']: assert term.lower() not in joined.lower(),term
 links=[]
 for i,page in enumerate(pdf.pages):
     assert abs(float(page.mediabox.width)-841.89)<1 and abs(float(page.mediabox.height)-595.28)<1
