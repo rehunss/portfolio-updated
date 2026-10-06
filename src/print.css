@@ -129,3 +129,20 @@
 .pdf-age-rows>div{min-height:31px}.pdf-age-rows{margin:18px 0}.pdf-age .pdf-takeaway{margin-top:16px!important}.pdf-kpi-grid{margin-top:20px}.pdf-kpi-grid>section{padding:14px}.pdf-kpi-bar{gap:5px}.pdf-kpi-bar svg{height:14px}.pdf-percent{margin:8px 0!important}.pdf-evaluation{margin-top:20px}.pdf-evaluation p{line-height:1.45}.pdf-tiriz-grid .pdf-kol-sample{margin:12px 0}.pdf-tiriz-grid .pdf-metrics{margin:12px 0}
 .pdf-platform-stack>section{padding:6px 0}.pdf-divia-results{margin-top:16px}.pdf-age-rows>div{min-height:29px}
 .pdf-logo.bem,.pdf-logo.fikomnex{background:#1d1d1f;border-radius:10px;padding:6px}
+.pdf-post-heading{margin-top:12px;margin-bottom:12px}
+.pdf-post-heading h4{font-size:21px;margin-bottom:8px}
+.pdf-post-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.pdf-post-card{padding:20px;background:#f5f5f7;border-radius:16px;min-width:0;min-height:220px}
+.pdf-post-card h4{font-size:23px;line-height:1.2;margin-bottom:10px}
+.pdf-post-card .pdf-small{font-size:11px;line-height:1.5}
+.pdf-post-card .pdf-metrics{gap:12px;margin:12px 0}
+.pdf-post-card .pdf-metrics strong{font-size:34px}
+.pdf-post-card .pdf-metrics span{font-size:11px;margin-top:6px}
+.pdf-post-card .pdf-proof{display:block;font-size:11px;line-height:1.5;margin-top:6px}
+.pdf-post-cross{font-size:11px;line-height:1.5;color:#626267}
+.pdf-post-context{font-size:11px;color:#626267;line-height:1.5;margin-top:10px!important}
+.pdf-divia-contribution{font-size:13px;color:#626267;line-height:1.5}
+.pdf-divia-contribution strong{color:#1d1d1f}
+.pdf-platform-stack .pdf-metrics{gap:14px;margin:8px 0}
+.pdf-platform-stack .pdf-metrics strong{font-size:26px}
+.pdf-platform-stack>section{padding:4px 0}

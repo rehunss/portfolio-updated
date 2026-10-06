@@ -149,6 +149,85 @@
       "downloadLabel": "Open original certificate PDF",
       "width": 1237,
       "height": 1600
+    },
+    {
+      "id": "divia-tt-overview",
+      "label": "TikTok account overview · Jun 1-Jul 29, 2026",
+      "file": "proof/divia-tiktok-overview-july.html",
+      "alt": "Curated transcription of selected TikTok account metrics, June 1-July 29, 2026",
+      "context": "Curated metric excerpt from the original account screenshot captured July 31, 2026: 401.1K post views and 3.1K shares. K values are rounded. Views fell 20.0% and shares fell 23.1% versus the comparison period. Team/account results; the original source is linked below.",
+      "excerpt": "proof/divia-tiktok-overview-july.html",
+      "metricIds": [
+        "tt-account-views",
+        "tt-account-shares"
+      ],
+      "url": "https://drive.google.com/file/d/1EFXkW3CAO-u6xm44E68eMs_QofGY80wi/view",
+      "urlLabel": "View original Drive source"
+    },
+    {
+      "id": "divia-tt-transport",
+      "label": "TikTok transport carousel · Aug 12 snapshot",
+      "file": "proof/divia-transport-tiktok-aug12.html",
+      "alt": "Original TikTok carousel analytics showing 9,898 views, 180 saves, 104 shares and 13 new followers.",
+      "context": "Curated transcription of selected metrics from the supplied original screenshot. Campus-transport carousel posted July 27, 2026. Snapshot captured August 12; key metrics updated August 11. 9,898 views, 180 saves, 104 shares and 13 new followers. Team/account content. The lower chart covers the first seven days after posting, while the key metrics are the displayed snapshot. The original screenshot is retained locally.",
+      "excerpt": "proof/divia-transport-tiktok-aug12.html",
+      "metricIds": [
+        "tt-transport-views",
+        "tt-transport-saves",
+        "tt-transport-shares"
+      ]
+    },
+    {
+      "id": "divia-tt-tour",
+      "label": "TikTok campus tour · Aug 12 snapshot",
+      "file": "proof/divia-tour-tiktok-aug12.html",
+      "alt": "Original TikTok campus-tour analytics with 9,745 views, 18 new followers and 12.5 seconds average watch time.",
+      "context": "Curated transcription of selected metrics from the supplied original screenshot. Keliling Fakultas di Unpad posted July 16, 2026. Snapshot captured August 12; key metrics updated August 11. 9,745 views, 18 new followers and 12.5 seconds average watch time. Team/account content. The original screenshot is retained locally.",
+      "excerpt": "proof/divia-tour-tiktok-aug12.html",
+      "metricIds": [
+        "tt-tour-views",
+        "tt-tour-follows",
+        "tt-tour-watch"
+      ]
+    },
+    {
+      "id": "divia-ig-tour",
+      "label": "Instagram campus tour · Aug 12 snapshot",
+      "file": "proof/divia-tour-instagram-aug12.html",
+      "alt": "Original Instagram campus-tour analytics with 3,765 views, 2,471 viewers and 6 follows.",
+      "context": "Curated transcription of selected metrics from the supplied original screenshot. Keliling Fakultas di Unpad Reel. Snapshot captured August 12, 2026; posting date is not displayed. 3,765 views, 2,471 viewers and 6 follows. Views and viewers are different measures. Team/account content. The original screenshot is retained locally.",
+      "excerpt": "proof/divia-tour-instagram-aug12.html",
+      "metricIds": [
+        "ig-tour-views",
+        "ig-tour-viewers",
+        "ig-tour-follows"
+      ]
+    },
+    {
+      "id": "divia-tt-ambassadors",
+      "label": "TikTok event coverage · Aug 12 snapshot",
+      "file": "proof/divia-ambassadors-tiktok-aug12.html",
+      "alt": "Original TikTok event-coverage analytics with 5,005 views, 302 likes and 22 shares.",
+      "context": "Curated transcription of selected metrics from the supplied original screenshot. Meet The Ambassadors / Festival Budaya Fikom Unpad posted June 27, 2026. Snapshot captured August 12; key metrics updated August 11. 5,005 views, 302 likes and 22 shares. Team/account content. The original screenshot is retained locally.",
+      "excerpt": "proof/divia-ambassadors-tiktok-aug12.html",
+      "metricIds": [
+        "tt-ambassadors-views",
+        "tt-ambassadors-likes",
+        "tt-ambassadors-shares"
+      ]
+    },
+    {
+      "id": "divia-ig-ambassadors",
+      "label": "Instagram event coverage · Aug 12 snapshot",
+      "file": "proof/divia-ambassadors-instagram-aug12.html",
+      "alt": "Original Instagram event-coverage analytics with 3,444 views, 121 likes and 13.1 seconds average watch time.",
+      "context": "Curated transcription of selected metrics from the supplied original screenshot. Meet The Ambassadors Reel. Snapshot captured August 12, 2026; posting date is not displayed. 3,444 views, 121 likes and 13.1 seconds average watch time. Team/account content. The original screenshot is retained locally.",
+      "excerpt": "proof/divia-ambassadors-instagram-aug12.html",
+      "metricIds": [
+        "ig-ambassadors-views",
+        "ig-ambassadors-likes",
+        "ig-ambassadors-watch"
+      ]
     }
   ],
   "projects": [
@@ -168,7 +247,13 @@
       "sourceIds": [
         "divia-linkedin",
         "divia-ig",
-        "divia-tiktok"
+        "divia-tiktok",
+        "divia-tt-overview",
+        "divia-tt-transport",
+        "divia-tt-tour",
+        "divia-ig-tour",
+        "divia-tt-ambassadors",
+        "divia-ig-ambassadors"
       ],
       "metricIds": [
         "ig-views",
@@ -476,6 +561,204 @@
       "attribution": "Divia TikTok account",
       "sourceId": "divia-tiktok",
       "note": "Comparison of net followers, not total-follower growth."
+    },
+    {
+      "id": "tt-account-views",
+      "label": "Post views",
+      "value": 401100,
+      "display": "401.1K",
+      "unit": "views",
+      "period": "Jun 1-Jul 29, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-overview",
+      "note": "Rounded account total as displayed. 20.0% below the comparison period; not unique reach."
+    },
+    {
+      "id": "tt-account-shares",
+      "label": "Shares",
+      "value": 3100,
+      "display": "3.1K",
+      "unit": "shares",
+      "period": "Jun 1-Jul 29, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-overview",
+      "note": "Rounded account total as displayed. 23.1% below the comparison period."
+    },
+    {
+      "id": "tt-transport-views",
+      "label": "Post views",
+      "value": 9898,
+      "display": "9,898",
+      "unit": "views",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-transport",
+      "note": "Views of the July 27 photo carousel; not unique viewers."
+    },
+    {
+      "id": "tt-transport-saves",
+      "label": "Saves",
+      "value": 180,
+      "display": "180",
+      "unit": "saves",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-transport",
+      "note": "Saves on this TikTok carousel, separate from the Instagram account aggregate of 78."
+    },
+    {
+      "id": "tt-transport-shares",
+      "label": "Shares",
+      "value": 104,
+      "display": "104",
+      "unit": "shares",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-transport",
+      "note": "Shares on this TikTok carousel."
+    },
+    {
+      "id": "tt-transport-follows",
+      "label": "New followers",
+      "value": 13,
+      "display": "13",
+      "unit": "followers",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-transport",
+      "note": "New followers attributed by TikTok to this carousel; not net account growth."
+    },
+    {
+      "id": "tt-tour-views",
+      "label": "Video views",
+      "value": 9745,
+      "display": "9,745",
+      "unit": "views",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-tour",
+      "note": "July 16 campus-tour video. Views can include repeated plays."
+    },
+    {
+      "id": "tt-tour-follows",
+      "label": "New followers",
+      "value": 18,
+      "display": "18",
+      "unit": "followers",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-tour",
+      "note": "New followers attributed by TikTok to this video; not net account growth."
+    },
+    {
+      "id": "tt-tour-watch",
+      "label": "Average watch time",
+      "value": 12.5,
+      "display": "12.5s",
+      "unit": "seconds",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-tour",
+      "note": "Average watch time for the 37.15-second TikTok video."
+    },
+    {
+      "id": "ig-tour-views",
+      "label": "Reel views",
+      "value": 3765,
+      "display": "3,765",
+      "unit": "views",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-ig-tour",
+      "note": "Views are distinct from the 2,471 viewers displayed. Posting date is not shown."
+    },
+    {
+      "id": "ig-tour-viewers",
+      "label": "Viewers",
+      "value": 2471,
+      "display": "2,471",
+      "unit": "viewers",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-ig-tour",
+      "note": "Viewer metric as labeled by Instagram; distinct from views."
+    },
+    {
+      "id": "ig-tour-follows",
+      "label": "Follows",
+      "value": 6,
+      "display": "6",
+      "unit": "follows",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-ig-tour",
+      "note": "Follows attributed by Instagram to this Reel."
+    },
+    {
+      "id": "tt-ambassadors-views",
+      "label": "Video views",
+      "value": 5005,
+      "display": "5,005",
+      "unit": "views",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-ambassadors",
+      "note": "June 27 Festival Budaya event coverage."
+    },
+    {
+      "id": "tt-ambassadors-likes",
+      "label": "Likes",
+      "value": 302,
+      "display": "302",
+      "unit": "likes",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-ambassadors",
+      "note": "Likes on the selected TikTok video."
+    },
+    {
+      "id": "tt-ambassadors-shares",
+      "label": "Shares",
+      "value": 22,
+      "display": "22",
+      "unit": "shares",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-tt-ambassadors",
+      "note": "Shares on the selected TikTok video."
+    },
+    {
+      "id": "ig-ambassadors-views",
+      "label": "Reel views",
+      "value": 3444,
+      "display": "3,444",
+      "unit": "views",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-ig-ambassadors",
+      "note": "Views on the selected Instagram Reel. Posting date is not shown."
+    },
+    {
+      "id": "ig-ambassadors-likes",
+      "label": "Likes",
+      "value": 121,
+      "display": "121",
+      "unit": "likes",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-ig-ambassadors",
+      "note": "Likes on the selected Instagram Reel."
+    },
+    {
+      "id": "ig-ambassadors-watch",
+      "label": "Average watch time",
+      "value": 13.1,
+      "display": "13.1s",
+      "unit": "seconds",
+      "period": "Snapshot Aug 12, 2026",
+      "attribution": "Divia team/account content",
+      "sourceId": "divia-ig-ambassadors",
+      "note": "Average watch time shown by Instagram."
     }
   ],
   "audience": {
@@ -966,5 +1249,87 @@
         }
       ]
     }
+  },
+  "diviaPostCases": {
+    "title": "Useful stories. Measurable response.",
+    "snapshot": "Selected post results / snapshot August 12, 2026",
+    "context": "Team/account content. TikTok key metrics were updated August 11; Instagram posting dates are not displayed. These snapshots are separate from the earlier account reports.",
+    "takeaway": "Saves and shares reveal another part of the response to practical campus information. Compare formats using their own platform metrics.",
+    "cases": [
+      {
+        "id": "transport",
+        "title": "A guide students could keep.",
+        "name": "Cara Mudah Navigasi Angkutan Kampus Unpad",
+        "description": "An eight-slide campus-transport guide pairs a practical student need with a format people can revisit and share.",
+        "platforms": [
+          {
+            "name": "TikTok",
+            "period": "Photo carousel / posted July 27, 2026",
+            "metricIds": [
+              "tt-transport-views",
+              "tt-transport-saves",
+              "tt-transport-shares"
+            ],
+            "proofId": "divia-tt-transport"
+          }
+        ]
+      },
+      {
+        "id": "tour",
+        "title": "Campus discovery, across platforms.",
+        "name": "POV: Keliling Fakultas di Unpad",
+        "description": "The campus-tour topic recorded views and follower actions on both platforms. Each result is reported separately.",
+        "platforms": [
+          {
+            "name": "TikTok",
+            "period": "Video / posted July 16, 2026",
+            "metricIds": [
+              "tt-tour-views",
+              "tt-tour-follows",
+              "tt-tour-watch"
+            ],
+            "proofId": "divia-tt-tour"
+          },
+          {
+            "name": "Instagram",
+            "period": "Reel / posting date not displayed",
+            "metricIds": [
+              "ig-tour-views",
+              "ig-tour-viewers",
+              "ig-tour-follows"
+            ],
+            "proofId": "divia-ig-tour"
+          }
+        ]
+      },
+      {
+        "id": "ambassadors",
+        "title": "Bringing a campus event to the feed.",
+        "name": "Meet The Ambassadors / Festival Budaya Fikom Unpad",
+        "description": "Event coverage complements campus guides with stories about the people and activities behind student life.",
+        "platforms": [
+          {
+            "name": "TikTok",
+            "period": "Video / posted June 27, 2026",
+            "metricIds": [
+              "tt-ambassadors-views",
+              "tt-ambassadors-likes",
+              "tt-ambassadors-shares"
+            ],
+            "proofId": "divia-tt-ambassadors"
+          },
+          {
+            "name": "Instagram",
+            "period": "Reel / posting date not displayed",
+            "metricIds": [
+              "ig-ambassadors-views",
+              "ig-ambassadors-likes",
+              "ig-ambassadors-watch"
+            ],
+            "proofId": "divia-ig-ambassadors"
+          }
+        ]
+      }
+    ]
   }
 }

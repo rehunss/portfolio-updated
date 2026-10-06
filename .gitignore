@@ -4,4 +4,6 @@ test-results/
 playwright-report/
 private/
 tmp/
+qa/
+output/
 *.tsbuildinfo

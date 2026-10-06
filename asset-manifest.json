@@ -586,5 +586,47 @@
     "type": "authored-identity-mark",
     "evidence": false,
     "sha256": "3b120f748ec6db43634a52d509308c6f845ac00a0db9551f14b3c3b51644571d"
+  },
+  {
+    "file": "proof/divia-tiktok-overview-july.html",
+    "type": "metric-excerpt",
+    "bytes": 1734,
+    "sha256": "836a801bbd13302b4ed6889e7b8da32292d5ae851184e1d3edcb4a8c134e042b",
+    "transform": "Curated transcription of selected portfolio metrics. Raw screenshots retained locally."
+  },
+  {
+    "file": "proof/divia-transport-tiktok-aug12.html",
+    "type": "metric-excerpt",
+    "bytes": 1713,
+    "sha256": "d67dfb6105f6d25d3d7abbf1b6dddf708572caa5e4dc630eafd084265d210767",
+    "transform": "Curated transcription of selected portfolio metrics. Raw screenshots retained locally."
+  },
+  {
+    "file": "proof/divia-tour-tiktok-aug12.html",
+    "type": "metric-excerpt",
+    "bytes": 1608,
+    "sha256": "a70901aeaaa15f94aae99b4fca78ddfcead0d67b21ec3dea16926b38fafc549a",
+    "transform": "Curated transcription of selected portfolio metrics. Raw screenshots retained locally."
+  },
+  {
+    "file": "proof/divia-tour-instagram-aug12.html",
+    "type": "metric-excerpt",
+    "bytes": 1607,
+    "sha256": "50baa6641fb314314d3d3b50e4f7126444117fb9468ccb48ddb3219d16aae775",
+    "transform": "Curated transcription of selected portfolio metrics. Raw screenshots retained locally."
+  },
+  {
+    "file": "proof/divia-ambassadors-tiktok-aug12.html",
+    "type": "metric-excerpt",
+    "bytes": 1619,
+    "sha256": "4051d538f58cd364363cb557686e4905c979f07edd9d07f5cf54480af86d8de0",
+    "transform": "Curated transcription of selected portfolio metrics. Raw screenshots retained locally."
+  },
+  {
+    "file": "proof/divia-ambassadors-instagram-aug12.html",
+    "type": "metric-excerpt",
+    "bytes": 1626,
+    "sha256": "aa081961528d4b84475a300c158d2c47409d8c4d8598b6c4a83399c3ca827981",
+    "transform": "Curated transcription of selected portfolio metrics. Raw screenshots retained locally."
   }
 ]

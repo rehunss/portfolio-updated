@@ -1,5 +1,5 @@
 import raw from './content.json';
-export type Evidence={id:string;label:string;file:string;alt:string;context:string;url?:string;download?:string;downloadLabel?:string;excerpt?:string;width?:number;height?:number};
+export type Evidence={id:string;label:string;file:string;alt:string;context:string;url?:string;urlLabel?:string;download?:string;downloadLabel?:string;excerpt?:string;metricIds?:string[];width?:number;height?:number};
 export type Metric={id:string;label:string;value:number;display:string;unit:string;period:string;attribution:string;sourceId:string;note:string;target?:number;rolePeriod?:string};
 export type Project={id:string;name:string;category:string;period:string;headline:string;narrative:string;contribution:string;takeaway:string;sample:string;sampleAlt:string;sampleCaption:string;sourceIds:string[];metricIds:string[];logo:string;logoAlt:string;logoWidth:number;logoHeight:number};
 export type Experience={id:string;name:string;role:string;period:string;type:string;text:string;sourceId:string;image:string;headline:string;context:string;contribution:string;result:string;logo:string;logoAlt:string;brandLabel:string;logoWidth:number;logoHeight:number;highlights:{value:string;label:string}[]};
