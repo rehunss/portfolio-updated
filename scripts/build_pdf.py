@@ -80,10 +80,11 @@ footer_source('Marketing communication, content strategy and public relations. S
 
 # 2: Divia process
 p=projects['divia'];header('01 / The campus studio','Divia Unpad TV',2)
-section('Marketing communication internship',40,130);text(p['period'],40,150,12,'Body',muted)
-para(html.escape(p['headline']),40,183,350,23,navy,'Bold',maxh=85)
-para(html.escape(p['narrative']),40,271,350,13,muted,maxh=160)
-image(p['sample'],430,129,370,259);image(p['logo'],559,15,242,60)
+image(p['logo'],40,118,190,48)
+image(p['sample'],430,129,370,259)
+section('Marketing communication internship',40,177);text(p['period'],40,197,12,'Body',muted)
+para(html.escape(p['headline']),40,226,350,23,navy,'Bold',maxh=85)
+para(html.escape(p['narrative']),40,284,350,13,muted,maxh=160)
 para('Published career-tips carousel. Team content; the export names a teammate as the poster.',430,397,360,11,muted,maxh=55)
 section('My contribution',40,440);para(html.escape(p['contribution']),40,460,350,12,maxh=47)
 link('Open the published carousel',sources['divia-linkedin']['url'],430,465,340)
@@ -194,15 +195,16 @@ text(data['profile']['name'],40,138,24,'Bold')
 para('For opportunities in marketing communication,<br/>social media, digital marketing and public relations.',40,181,580,18,muted,maxh=74)
 link(data['profile']['email'],'mailto:'+data['profile']['email'],40,274,620,16)
 link('LinkedIn / Muhammad Raihan Ramadhan',data['profile']['linkedin'],40,321,660,14)
-section('Selected evidence links',40,386)
+link('Visit portfolio website / rehunss.github.io/portfolio-updated', 'https://rehunss.github.io/portfolio-updated/',40,359,760,13)
+section('Selected evidence links',40,405)
 for i,(label,url) in enumerate([
 ('Divia published career carousel',sources['divia-linkedin']['url']),
 ('Divia original analytics folder','https://drive.google.com/drive/folders/1ctP-28KCyufR_ADB9BJdL5SSxZoUrSSD'),
 ('Full TIRIZ campaign report',data['profile']['campaignReportUrl']),
 ('Fundamentals of digital marketing certificate','https://drive.google.com/file/d/1ueCDiIOzBVkAIv1bCabXRrzgBjl9yfR9/view')]):
-    link(label,url,40+(i%2)*397,412+(i//2)*36,365,11)
-para('The website includes full-size curated proof and both document downloads. External source links retain their existing permissions; some may require access.',40,501,760,11,muted,maxh=32)
-footer_source('Muhammad Raihan Ramadhan | Selected work and experience | October 2026',536);end()
+    link(label,url,40+(i%2)*397,431+(i//2)*36,365,11)
+para('The website includes full-size curated proof and both document downloads. External source links retain their existing permissions; some may require access.',40,515,760,10,muted,maxh=24)
+footer_source('Muhammad Raihan Ramadhan | Selected work and experience | October 2026',545);end()
 c.save();shutil.copy2(out,root/'public/documents'/out.name)
 (root/'qa/pdf-links.json').write_text(json.dumps(links,indent=2),encoding='utf8');(root/'qa/pdf-text-frames.json').write_text(json.dumps(boxes,indent=2),encoding='utf8')
 print(f'Created {out}, 10 landscape pages, {len(links)} clickable links. Website download synchronized.')
